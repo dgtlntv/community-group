@@ -1,0 +1,10 @@
+{
+  "$description": "sRGB linear color space",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb-linear",
+      "components": [0.5, 0.5, 0.5]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$description": "INVALID: Token has unknown/invalid property 'customProp' not prefixed with $",
+  "invalid-extra-properties": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0]
+    },
+    "customProp": "not allowed"
+  }
+}

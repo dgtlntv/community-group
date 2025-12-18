@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: Shadow missing required 'offsetX' property",
+  "invalid-shadow": {
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0]
+      },
+      "offsetY": {
+        "value": 2,
+        "unit": "px"
+      },
+      "blur": {
+        "value": 4,
+        "unit": "px"
+      },
+      "spread": {
+        "value": 0,
+        "unit": "px"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: JSON Pointer with unencoded space in path",
+  "invalid-json-pointer": {
+    "$ref": "#/colors/token with spaces/$value",
+    "$type": "color"
+  }
+}

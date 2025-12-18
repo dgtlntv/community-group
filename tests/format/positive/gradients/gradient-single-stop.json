@@ -1,0 +1,15 @@
+{
+  "$description": "Edge case: gradient with only one stop",
+  "gradient": {
+    "$type": "gradient",
+    "$value": [
+      {
+        "color": {
+          "colorSpace": "srgb",
+          "components": [1, 0, 0]
+        },
+        "position": 0.5
+      }
+    ]
+  }
+}

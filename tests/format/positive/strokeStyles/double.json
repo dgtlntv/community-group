@@ -1,0 +1,7 @@
+{
+  "$description": "Double stroke style as string",
+  "stroke": {
+    "$type": "strokeStyle",
+    "$value": "double"
+  }
+}

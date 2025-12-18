@@ -1,0 +1,7 @@
+{
+  "$description": "Font weight string keyword - thin",
+  "weight": {
+    "$type": "fontWeight",
+    "$value": "thin"
+  }
+}

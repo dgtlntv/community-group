@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: HSL hue must be [0-360), value 360 is excluded",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "hsl",
+      "components": [360, 50, 50]
+    }
+  }
+}

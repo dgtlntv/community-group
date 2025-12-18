@@ -1,0 +1,16 @@
+{
+  "$description": "INVALID: JSON Pointer references a color component (number) but declares type as dimension",
+  "colors": {
+    "srgb-color": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  },
+  "invalid-json-pointer": {
+    "$ref": "#/colors/srgb-color/$value/components/0",
+    "$type": "dimension"
+  }
+}

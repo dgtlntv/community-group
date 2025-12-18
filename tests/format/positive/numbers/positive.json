@@ -1,0 +1,7 @@
+{
+  "$description": "Positive number (e.g., line height)",
+  "lineHeight": {
+    "$type": "number",
+    "$value": 1.5
+  }
+}

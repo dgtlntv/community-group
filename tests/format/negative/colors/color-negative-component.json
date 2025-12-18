@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: sRGB component cannot be negative (-0.5 is invalid)",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [-0.5, 0, 0]
+    }
+  }
+}

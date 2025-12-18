@@ -1,0 +1,14 @@
+{
+  "$description": "INVALID: Color components must be array, not object",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": {
+        "red": 1,
+        "green": 0,
+        "blue": 0
+      }
+    }
+  }
+}

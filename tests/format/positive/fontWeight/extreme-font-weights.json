@@ -1,0 +1,13 @@
+{
+  "$description": "Edge cases: minimum and maximum fontWeight values",
+  "weights": {
+    "min": {
+      "$type": "fontWeight",
+      "$value": 1
+    },
+    "max": {
+      "$type": "fontWeight",
+      "$value": 1000
+    }
+  }
+}

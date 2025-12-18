@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "Basic typography composite token",
+  "typography": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": {
+        "value": 16,
+        "unit": "px"
+      },
+      "fontWeight": 400,
+      "letterSpacing": {
+        "value": 0,
+        "unit": "px"
+      },
+      "lineHeight": 1.5
+    }
+  }
+}

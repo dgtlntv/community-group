@@ -1,0 +1,40 @@
+{
+  "description": "INVALID: Duplicate names in resolution order",
+  "version": "2025.10",
+  "resolutionOrder": [
+    {
+      "type": "set",
+      "name": "colors",
+      "sources": [
+        {
+          "color": {
+            "primary": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0.2, 0.4, 0.8]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "set",
+      "name": "colors",
+      "sources": [
+        {
+          "color": {
+            "secondary": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0.8, 0.4, 0.2]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

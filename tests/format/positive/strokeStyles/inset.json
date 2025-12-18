@@ -1,0 +1,7 @@
+{
+  "$description": "Inset stroke style",
+  "stroke": {
+    "$type": "strokeStyle",
+    "$value": "inset"
+  }
+}

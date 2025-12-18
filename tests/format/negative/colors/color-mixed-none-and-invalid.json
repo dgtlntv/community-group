@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: Components array has wrong type - mixing 'none' with numbers improperly",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "hsl",
+      "components": ["none", "not-a-number", 50]
+    }
+  }
+}

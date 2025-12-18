@@ -1,0 +1,16 @@
+{
+  "$description": "Token with extension data",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [0.5, 0.5, 0.5]
+    },
+    "$extensions": {
+      "com.example.tool": {
+        "customProperty": "value",
+        "numericValue": 42
+      }
+    }
+  }
+}

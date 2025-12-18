@@ -1,0 +1,11 @@
+{
+  "description": "INVALID: Modifier with empty contexts",
+  "version": "2025.10",
+  "modifiers": {
+    "theme": {
+      "description": "Empty contexts object",
+      "contexts": {}
+    }
+  },
+  "resolutionOrder": [{ "$ref": "#/modifiers/theme" }]
+}

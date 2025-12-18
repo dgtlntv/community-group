@@ -1,0 +1,11 @@
+{
+  "$description": "INVALID: $description must be string, not number",
+  "invalid-description": {
+    "$description": 123,
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0]
+    }
+  }
+}

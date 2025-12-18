@@ -1,0 +1,11 @@
+{
+  "$description": "HSL color space",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "hsl",
+      "components": [180, 50, 50],
+      "hex": "#40bfbf"
+    }
+  }
+}

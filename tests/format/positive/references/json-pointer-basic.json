@@ -1,0 +1,19 @@
+{
+  "$description": "JSON Pointer reference ($ref)",
+  "colors": {
+    "$type": "color",
+    "blue": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 0.4, 0.8],
+        "hex": "#0066cc"
+      }
+    }
+  },
+  "semantic": {
+    "primary": {
+      "$type": "color",
+      "$ref": "#/colors/blue/$value"
+    }
+  }
+}

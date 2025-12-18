@@ -1,0 +1,7 @@
+{
+  "$description": "Cubic Bezier easing function",
+  "easing": {
+    "$type": "cubicBezier",
+    "$value": [0.42, 0, 0.58, 1]
+  }
+}

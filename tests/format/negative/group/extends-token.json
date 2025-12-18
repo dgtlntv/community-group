@@ -1,0 +1,22 @@
+{
+  "$description": "INVALID: $extends must reference a group, not a token",
+  "colors": {
+    "srgb-color": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  },
+  "invalid-extends": {
+    "$extends": "{colors.srgb-color}",
+    "variant": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 1, 0]
+      }
+    }
+  }
+}

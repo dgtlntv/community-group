@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: X coordinates cannot be negative",
+  "invalid-cubicBezier": {
+    "$type": "cubicBezier",
+    "$value": [-0.1, 0, 0.58, 1]
+  }
+}

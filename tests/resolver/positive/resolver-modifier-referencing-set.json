@@ -1,0 +1,62 @@
+{
+  "description": "Resolver with modifier referencing a set",
+  "version": "2025.10",
+  "sets": {
+    "baseSize": {
+      "sources": [
+        {
+          "space": {
+            "base": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "modifiers": {
+    "size": {
+      "description": "Application size",
+      "contexts": {
+        "small": [
+          { "$ref": "#/sets/baseSize" },
+          {
+            "space": {
+              "multiplier": {
+                "$type": "number",
+                "$value": 0.75
+              }
+            }
+          }
+        ],
+        "medium": [
+          { "$ref": "#/sets/baseSize" },
+          {
+            "space": {
+              "multiplier": {
+                "$type": "number",
+                "$value": 1
+              }
+            }
+          }
+        ],
+        "large": [
+          { "$ref": "#/sets/baseSize" },
+          {
+            "space": {
+              "multiplier": {
+                "$type": "number",
+                "$value": 1.25
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "resolutionOrder": [{ "$ref": "#/modifiers/size" }]
+}

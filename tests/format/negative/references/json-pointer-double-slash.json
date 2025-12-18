@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: JSON Pointer with double slashes",
+  "invalid-json-pointer": {
+    "$ref": "#/colors//primary/$value",
+    "$type": "color"
+  }
+}

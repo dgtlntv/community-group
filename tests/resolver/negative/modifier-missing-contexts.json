@@ -1,0 +1,10 @@
+{
+  "description": "INVALID: Modifier missing contexts",
+  "version": "2025.10",
+  "modifiers": {
+    "theme": {
+      "description": "Missing contexts property"
+    }
+  },
+  "resolutionOrder": [{ "$ref": "#/modifiers/theme" }]
+}

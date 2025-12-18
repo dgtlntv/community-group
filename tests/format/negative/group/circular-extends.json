@@ -1,0 +1,23 @@
+{
+  "$description": "INVALID: Group with circular $extends reference",
+  "circular-extends-a": {
+    "$extends": "{circular-extends-b}",
+    "token": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  },
+  "circular-extends-b": {
+    "$extends": "{circular-extends-a}",
+    "token": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 1, 0]
+      }
+    }
+  }
+}

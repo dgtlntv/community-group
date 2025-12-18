@@ -1,0 +1,19 @@
+{
+  "$description": "Curly brace reference (alias)",
+  "colors": {
+    "$type": "color",
+    "blue": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 0.4, 0.8],
+        "hex": "#0066cc"
+      }
+    }
+  },
+  "semantic": {
+    "primary": {
+      "$type": "color",
+      "$value": "{colors.blue}"
+    }
+  }
+}

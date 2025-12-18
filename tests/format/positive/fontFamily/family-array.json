@@ -1,0 +1,7 @@
+{
+  "$description": "Font family as array with fallbacks",
+  "font": {
+    "$type": "fontFamily",
+    "$value": ["Arial", "Helvetica", "sans-serif"]
+  }
+}

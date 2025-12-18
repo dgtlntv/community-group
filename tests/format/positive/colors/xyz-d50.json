@@ -1,0 +1,11 @@
+{
+  "$description": "Color in xyz-d50 color space",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "xyz-d50",
+      "components": [0.5791, 0.2831, 0.728],
+      "hex": "#ff00ff"
+    }
+  }
+}

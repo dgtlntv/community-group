@@ -1,0 +1,7 @@
+{
+  "$description": "Font weight string keyword - extra-bold",
+  "weight": {
+    "$type": "fontWeight",
+    "$value": "extra-bold"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "$description": "Group extension with nested group overrides - demonstrates deep merge behavior",
+  "base-theme": {
+    "$type": "color",
+    "colors": {
+      "primary": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [0, 0.4, 0.8],
+          "hex": "#0066cc"
+        }
+      },
+      "secondary": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [0.4, 0.6, 1],
+          "hex": "#6699ff"
+        }
+      }
+    },
+    "spacing": {
+      "small": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      },
+      "medium": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        }
+      },
+      "large": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        }
+      }
+    }
+  },
+  "dark-theme": {
+    "$extends": "{base-theme}",
+    "colors": {
+      "primary": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [0.2, 0.533, 0.867],
+          "hex": "#3388dd"
+        }
+      },
+      "background": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [0.1, 0.1, 0.1],
+          "hex": "#1a1a1a"
+        }
+      }
+    },
+    "spacing": {
+      "medium": {
+        "$type": "dimension",
+        "$value": {
+          "value": 20,
+          "unit": "px"
+        }
+      },
+      "xlarge": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        }
+      }
+    }
+  }
+}

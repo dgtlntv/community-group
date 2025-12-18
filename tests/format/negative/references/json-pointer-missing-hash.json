@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: JSON Pointer must start with #",
+  "invalid-json-pointer": {
+    "$ref": "/colors/primary/$value",
+    "$type": "color"
+  }
+}

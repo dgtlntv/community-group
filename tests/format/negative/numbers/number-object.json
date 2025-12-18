@@ -1,0 +1,9 @@
+{
+  "$description": "INVALID: Number type must be a plain number, not an object",
+  "invalid-number": {
+    "$type": "number",
+    "$value": {
+      "value": 1.5
+    }
+  }
+}

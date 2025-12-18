@@ -1,0 +1,7 @@
+{
+  "$description": "Font weight as numeric value",
+  "weight": {
+    "$type": "fontWeight",
+    "$value": 700
+  }
+}

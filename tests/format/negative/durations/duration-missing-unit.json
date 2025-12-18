@@ -1,0 +1,9 @@
+{
+  "$description": "INVALID: Duration missing required 'unit' property",
+  "invalid-duration": {
+    "$type": "duration",
+    "$value": {
+      "value": 200
+    }
+  }
+}

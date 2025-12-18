@@ -1,0 +1,11 @@
+{
+  "$description": "INVALID: Hex fallback must be string, not number",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0],
+      "hex": 16711680
+    }
+  }
+}

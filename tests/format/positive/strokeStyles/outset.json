@@ -1,0 +1,7 @@
+{
+  "$description": "Outset stroke style",
+  "stroke": {
+    "$type": "strokeStyle",
+    "$value": "outset"
+  }
+}

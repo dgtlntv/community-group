@@ -1,0 +1,44 @@
+{
+  "description": "Resolver with empty context array",
+  "version": "2025.10",
+  "sets": {
+    "base": {
+      "sources": [
+        {
+          "color": {
+            "primary": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0.2, 0.4, 0.8]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "modifiers": {
+    "debug": {
+      "description": "Enable debug mode",
+      "contexts": {
+        "false": [],
+        "true": [
+          {
+            "debug": {
+              "enabled": {
+                "$type": "number",
+                "$value": 1
+              }
+            }
+          }
+        ]
+      },
+      "default": "false"
+    }
+  },
+  "resolutionOrder": [
+    { "$ref": "#/sets/base" },
+    { "$ref": "#/modifiers/debug" }
+  ]
+}

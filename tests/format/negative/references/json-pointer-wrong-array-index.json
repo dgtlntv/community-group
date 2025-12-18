@@ -1,0 +1,16 @@
+{
+  "$description": "INVALID: JSON Pointer array index out of bounds",
+  "colors": {
+    "srgb-color": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  },
+  "invalid-json-pointer": {
+    "$ref": "#/colors/srgb-color/$value/components/99",
+    "$type": "number"
+  }
+}

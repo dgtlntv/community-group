@@ -1,0 +1,13 @@
+{
+  "$description": "INVALID: $extends references non-existent group",
+  "invalid-extends": {
+    "$extends": "{nonexistent.group}",
+    "token": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  }
+}

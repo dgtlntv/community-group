@@ -1,0 +1,13 @@
+{
+  "description": "INVALID: Circular reference in sets",
+  "version": "2025.10",
+  "sets": {
+    "a": {
+      "sources": [{ "$ref": "#/sets/b" }]
+    },
+    "b": {
+      "sources": [{ "$ref": "#/sets/a" }]
+    }
+  },
+  "resolutionOrder": [{ "$ref": "#/sets/a" }]
+}

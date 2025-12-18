@@ -1,0 +1,11 @@
+{
+  "$description": "LCH (Lightness, Chroma, Hue) color space",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "lch",
+      "components": [60.17, 111.4, 327.11],
+      "hex": "#ff00ff"
+    }
+  }
+}

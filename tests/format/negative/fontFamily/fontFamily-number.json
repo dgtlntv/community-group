@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Font family must be string or array of strings, not number",
+  "invalid-fontFamily": {
+    "$type": "fontFamily",
+    "$value": 123
+  }
+}

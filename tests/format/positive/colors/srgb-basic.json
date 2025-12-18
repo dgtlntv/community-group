@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "Basic sRGB color token",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0.5],
+      "hex": "#ff0080"
+    }
+  }
+}

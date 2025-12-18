@@ -1,0 +1,7 @@
+{
+  "$description": "Negative number",
+  "value": {
+    "$type": "number",
+    "$value": -5
+  }
+}

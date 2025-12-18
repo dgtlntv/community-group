@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: Color value missing required colorSpace property",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "components": [1, 0, 0]
+    }
+  }
+}

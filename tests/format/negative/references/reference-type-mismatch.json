@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: Token references a dimension but declares type as color",
+  "dimensions": {
+    "spacing-small": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    }
+  },
+  "invalid-reference": {
+    "$type": "color",
+    "$value": "{dimensions.spacing-small}"
+  }
+}

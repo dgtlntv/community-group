@@ -1,0 +1,22 @@
+{
+  "$description": "INVALID: Border width references just a number instead of dimension object",
+  "numbers": {
+    "line-height-normal": {
+      "$type": "number",
+      "$value": 1.5
+    }
+  },
+  "invalid-composite": {
+    "$type": "border",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0]
+      },
+      "width": {
+        "$ref": "#/numbers/line-height-normal/$value"
+      },
+      "style": "solid"
+    }
+  }
+}

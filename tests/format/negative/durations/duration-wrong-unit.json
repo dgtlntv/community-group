@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: Only 'ms' and 's' are valid duration units, 'min' is not supported",
+  "invalid-duration": {
+    "$type": "duration",
+    "$value": {
+      "value": 1,
+      "unit": "min"
+    }
+  }
+}

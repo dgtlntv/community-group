@@ -1,0 +1,10 @@
+{
+  "$description": "Duration with fractional seconds",
+  "duration": {
+    "$type": "duration",
+    "$value": {
+      "value": 2.5,
+      "unit": "s"
+    }
+  }
+}

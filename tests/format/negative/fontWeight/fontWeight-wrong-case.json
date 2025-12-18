@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Font weight strings are case-sensitive, 'BOLD' should be 'bold'",
+  "invalid-fontWeight": {
+    "$type": "fontWeight",
+    "$value": "BOLD"
+  }
+}

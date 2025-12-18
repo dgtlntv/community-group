@@ -1,0 +1,10 @@
+{
+  "$description": "Dimension with rem unit",
+  "spacing": {
+    "$type": "dimension",
+    "$value": {
+      "value": 2,
+      "unit": "rem"
+    }
+  }
+}

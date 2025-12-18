@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: JSON Pointer to non-existent path",
+  "invalid-json-pointer": {
+    "$ref": "#/does/not/exist",
+    "$type": "color"
+  }
+}

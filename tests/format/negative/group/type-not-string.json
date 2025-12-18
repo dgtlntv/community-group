@@ -1,0 +1,12 @@
+{
+  "$description": "INVALID: Group $type must be string, not array",
+  "invalid-group": {
+    "$type": ["color", "dimension"],
+    "token": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  }
+}

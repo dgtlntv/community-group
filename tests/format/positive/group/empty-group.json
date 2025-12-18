@@ -1,0 +1,20 @@
+{
+  "$description": "Empty groups are valid according to spec - may contain metadata or serve as placeholders",
+  "colors": {
+    "$type": "color",
+    "primary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 0.4, 0.8]
+      }
+    }
+  },
+  "experimental": {
+    "$description": "Tokens for experimental features - currently empty",
+    "$deprecated": "This group is being phased out"
+  },
+  "future-tokens": {
+    "$description": "Reserved for future token development"
+  },
+  "spacing": {}
+}

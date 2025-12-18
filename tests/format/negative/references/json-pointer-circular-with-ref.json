@@ -1,0 +1,11 @@
+{
+  "$description": "INVALID: Circular reference using $ref pointing back to itself",
+  "invalid-json-pointer": {
+    "$ref": "#/invalid-json-pointer/$value",
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0]
+    }
+  }
+}

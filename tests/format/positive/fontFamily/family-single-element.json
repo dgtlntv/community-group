@@ -1,0 +1,7 @@
+{
+  "$description": "Font family as single-element array",
+  "font": {
+    "$type": "fontFamily",
+    "$value": ["Monaco"]
+  }
+}

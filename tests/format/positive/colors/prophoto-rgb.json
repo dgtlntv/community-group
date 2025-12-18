@@ -1,0 +1,11 @@
+{
+  "$description": "Color in prophoto-rgb color space",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "prophoto-rgb",
+      "components": [0.7, 0.3, 0.9],
+      "hex": "#b34dd9"
+    }
+  }
+}

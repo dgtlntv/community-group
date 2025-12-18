@@ -1,0 +1,12 @@
+{
+  "$description": "INVALID: Token names must not start with $ character",
+  "group": {
+    "$invalidName": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  }
+}

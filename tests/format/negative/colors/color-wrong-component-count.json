@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: sRGB requires exactly 3 components, but has 2",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0]
+    }
+  }
+}

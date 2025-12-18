@@ -1,0 +1,7 @@
+{
+  "$description": "Font weight string keyword - hairline",
+  "weight": {
+    "$type": "fontWeight",
+    "$value": "hairline"
+  }
+}

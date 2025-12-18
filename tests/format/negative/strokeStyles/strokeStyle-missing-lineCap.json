@@ -1,0 +1,14 @@
+{
+  "$description": "INVALID: Object stroke style missing required 'lineCap' property",
+  "invalid-strokeStyle": {
+    "$type": "strokeStyle",
+    "$value": {
+      "dashArray": [
+        {
+          "value": 5,
+          "unit": "px"
+        }
+      ]
+    }
+  }
+}

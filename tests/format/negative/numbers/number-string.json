@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Number type must be a JSON number, not a string",
+  "invalid-number": {
+    "$type": "number",
+    "$value": "1.5"
+  }
+}

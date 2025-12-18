@@ -1,0 +1,24 @@
+{
+  "$description": "INVALID: Composite token with $ref but missing other required properties",
+  "colors": {
+    "srgb-color": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  },
+  "invalid-composite": {
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "$ref": "#/colors/srgb-color/$value"
+      },
+      "offsetX": {
+        "value": 0,
+        "unit": "px"
+      }
+    }
+  }
+}

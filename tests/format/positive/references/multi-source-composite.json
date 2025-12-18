@@ -1,0 +1,92 @@
+{
+  "$description": "Composite token assembled from multiple source tokens via references",
+  "base-gradient": {
+    "$type": "gradient",
+    "$value": [
+      {
+        "color": {
+          "colorSpace": "srgb",
+          "components": [1, 0, 0]
+        },
+        "position": 0
+      },
+      {
+        "color": {
+          "colorSpace": "srgb",
+          "components": [0, 0, 1]
+        },
+        "position": 1
+      }
+    ]
+  },
+  "base-border": {
+    "$type": "border",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0.2, 0.2, 0.2]
+      },
+      "width": {
+        "value": 2,
+        "unit": "px"
+      },
+      "style": {
+        "dashArray": [
+          {
+            "value": 10,
+            "unit": "px"
+          }
+        ],
+        "lineCap": "round"
+      }
+    }
+  },
+  "base-shadow": {
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0],
+        "alpha": 0.2
+      },
+      "offsetX": {
+        "value": 0,
+        "unit": "px"
+      },
+      "offsetY": {
+        "value": 4,
+        "unit": "px"
+      },
+      "blur": {
+        "value": 8,
+        "unit": "px"
+      },
+      "spread": {
+        "value": 0,
+        "unit": "px"
+      }
+    }
+  },
+  "complex-shadow-from-multiple-sources": {
+    "$description": "Shadow assembled from refs to various composite sub-values",
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "$ref": "#/base-gradient/$value/0/color"
+      },
+      "offsetX": {
+        "$ref": "#/base-border/$value/width"
+      },
+      "offsetY": {
+        "$ref": "#/base-shadow/$value/offsetY"
+      },
+      "blur": {
+        "$ref": "#/base-border/$value/style/dashArray/0"
+      },
+      "spread": {
+        "value": 0,
+        "unit": "px"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$description": "Typography with string font weight",
+  "typography": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "system-ui",
+      "fontSize": {
+        "value": 14,
+        "unit": "px"
+      },
+      "fontWeight": "normal",
+      "letterSpacing": {
+        "value": 0,
+        "unit": "px"
+      },
+      "lineHeight": 1.4
+    }
+  }
+}

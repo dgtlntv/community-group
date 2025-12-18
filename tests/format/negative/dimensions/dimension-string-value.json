@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: Dimension value must be a number, not a string",
+  "invalid-dimension": {
+    "$type": "dimension",
+    "$value": {
+      "value": "16",
+      "unit": "px"
+    }
+  }
+}

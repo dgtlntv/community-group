@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: 'super-bold' is not a valid font weight string value",
+  "invalid-fontWeight": {
+    "$type": "fontWeight",
+    "$value": "super-bold"
+  }
+}

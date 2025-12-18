@@ -1,0 +1,10 @@
+{
+  "$description": "Dimension with fractional value",
+  "dimension": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.5,
+      "unit": "rem"
+    }
+  }
+}

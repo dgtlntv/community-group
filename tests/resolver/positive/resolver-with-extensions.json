@@ -1,0 +1,76 @@
+{
+  "description": "Resolver with extensions",
+  "version": "2025.10",
+  "sets": {
+    "colors": {
+      "description": "Color tokens",
+      "sources": [
+        {
+          "color": {
+            "primary": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0.2, 0.4, 0.8]
+              }
+            }
+          }
+        }
+      ],
+      "$extensions": {
+        "figma.com": {
+          "sourceFile": "https://figma.com/file/xxxxxx",
+          "updatedAt": "2025-11-01"
+        },
+        "com.example.tool": {
+          "version": "1.0.0",
+          "metadata": {
+            "author": "Designer Name"
+          }
+        }
+      }
+    }
+  },
+  "modifiers": {
+    "theme": {
+      "description": "Color theme",
+      "contexts": {
+        "light": [
+          {
+            "color": {
+              "background": {
+                "$type": "color",
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [1, 1, 1]
+                }
+              }
+            }
+          }
+        ],
+        "dark": [
+          {
+            "color": {
+              "background": {
+                "$type": "color",
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [0, 0, 0]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "$extensions": {
+        "figma.com": {
+          "modeId": "theme-mode-123"
+        }
+      }
+    }
+  },
+  "resolutionOrder": [
+    { "$ref": "#/sets/colors" },
+    { "$ref": "#/modifiers/theme" }
+  ]
+}

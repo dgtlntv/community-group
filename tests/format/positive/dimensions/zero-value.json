@@ -1,0 +1,10 @@
+{
+  "$description": "Dimension with zero value",
+  "spacing": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  }
+}

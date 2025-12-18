@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Gradient value cannot be an empty array",
+  "invalid-gradient": {
+    "$type": "gradient",
+    "$value": []
+  }
+}

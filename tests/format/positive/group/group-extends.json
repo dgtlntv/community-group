@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "Group demonstrating $extends feature for inheritance",
+  "base-button": {
+    "$type": "color",
+    "background": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 0.4, 0.8]
+      }
+    },
+    "text": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 1, 1]
+      }
+    }
+  },
+  "primary-button": {
+    "$extends": "{base-button}",
+    "background": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.8, 0, 0.4]
+      }
+    }
+  }
+}

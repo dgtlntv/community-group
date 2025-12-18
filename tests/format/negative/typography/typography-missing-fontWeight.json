@@ -1,0 +1,18 @@
+{
+  "$description": "INVALID: Typography missing required 'fontWeight' property",
+  "invalid-typography": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "Arial",
+      "fontSize": {
+        "value": 16,
+        "unit": "px"
+      },
+      "letterSpacing": {
+        "value": 0,
+        "unit": "px"
+      },
+      "lineHeight": 1.5
+    }
+  }
+}

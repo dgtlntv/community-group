@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Reference to non-existent token",
+  "invalid-reference": {
+    "$type": "color",
+    "$value": "{nonexistent.token}"
+  }
+}

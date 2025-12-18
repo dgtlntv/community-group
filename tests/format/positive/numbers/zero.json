@@ -1,0 +1,7 @@
+{
+  "$description": "Zero value number",
+  "value": {
+    "$type": "number",
+    "$value": 0
+  }
+}

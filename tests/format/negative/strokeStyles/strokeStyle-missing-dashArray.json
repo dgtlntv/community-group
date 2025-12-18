@@ -1,0 +1,9 @@
+{
+  "$description": "INVALID: Object stroke style missing required 'dashArray' property",
+  "invalid-strokeStyle": {
+    "$type": "strokeStyle",
+    "$value": {
+      "lineCap": "round"
+    }
+  }
+}
