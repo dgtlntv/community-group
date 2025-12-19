@@ -112,20 +112,61 @@ function requiresPreprocessing(test: TestCase): boolean {
 }
 
 /**
- * Formats a validation error into a human-readable message.
+ * Formats AJV validation errors into a readable string.
  *
- * @param testCase - The test case that failed validation
  * @param errors - The AJV validation errors
+ * @returns A formatted string of errors, or a message if no errors
+ */
+function formatValidationErrors(errors: Ajv['errors']): string {
+  if (!errors || errors.length === 0) {
+    return '  (no validation errors)';
+  }
+
+  return errors
+    .map((err) => {
+      return [
+        `  Path: ${err.instancePath || '(root)'}`,
+        `  Message: ${err.message}`,
+        err.params ? `  Params: ${JSON.stringify(err.params)}` : null,
+      ]
+        .filter(Boolean)
+        .join('\n');
+    })
+    .join('\n\n');
+}
+
+/**
+ * Formats a test error message for both positive and negative test failures.
+ *
+ * @param testCase - The test case that failed
+ * @param fixture - The fixture data used in the test
+ * @param schemaId - The schema ID used for validation
+ * @param errors - The AJV validation errors (if any)
  * @returns A formatted error message string
  */
-function formatValidationError(
+function formatTestError(
   testCase: TestCase,
+  fixture: unknown,
+  schemaId: string,
   errors: Ajv['errors']
 ): string {
+  const isPositiveTest = testCase.type === 'PositiveEvaluationTest';
+
   return [
-    `Expected ${testCase.name} to pass validation but it failed.`,
+    '',
+    `Test: ${testCase.name}`,
     `Purpose: ${testCase.purpose}`,
-    `Errors: ${JSON.stringify(errors, null, 2)}`,
+    `Schema: ${schemaId}`,
+    '',
+    `Expected: ${isPositiveTest ? 'Valid' : 'Invalid'}`,
+    `Actual: ${isPositiveTest ? 'Invalid' : 'Valid'}`,
+    '',
+    'Fixture:',
+    JSON.stringify(fixture, null, 2),
+    '',
+    'Validation Errors:',
+    formatValidationErrors(errors),
+    '',
   ].join('\n');
 }
 
@@ -157,17 +198,12 @@ for (const { id, file } of rootManifest.manifests) {
       const fixture = loadJsonFile(fixturePath, `fixture ${testCase.input}`);
 
       const isValid = validate(fixture);
+      const expectedValid = testCase.type === 'PositiveEvaluationTest';
 
-      if (testCase.type === 'PositiveEvaluationTest') {
-        expect(isValid, formatValidationError(testCase, validate.errors)).toBe(true);
-      } else if (testCase.type === 'NegativeEvaluationTest') {
-        expect(isValid, `Expected ${testCase.name} to fail validation but it passed`).toBe(false);
-        expect(validate.errors).toBeDefined();
-        expect(validate.errors?.length).toBeGreaterThan(0);
-      } else {
-        const _exhaustive: never = testCase.type;
-        throw new Error(`Unknown test type: ${_exhaustive}`);
-      }
+      expect(
+        isValid,
+        formatTestError(testCase, fixture, schemaId, validate.errors)
+      ).toBe(expectedValid);
     });
   });
 }
