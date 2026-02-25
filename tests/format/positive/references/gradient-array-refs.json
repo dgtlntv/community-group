@@ -1,0 +1,37 @@
+{
+  "$description": "Referencing array elements in gradients using JSON Pointer",
+  "base-gradient": {
+    "$type": "gradient",
+    "$value": [
+      {
+        "color": {
+          "colorSpace": "srgb",
+          "components": [1, 0, 0]
+        },
+        "position": 0
+      },
+      {
+        "color": {
+          "colorSpace": "srgb",
+          "components": [0, 0, 1]
+        },
+        "position": 1
+      }
+    ]
+  },
+  "color-from-gradient-start": {
+    "$description": "Extract color from first gradient stop",
+    "$type": "color",
+    "$ref": "#/base-gradient/$value/0/color"
+  },
+  "color-from-gradient-end": {
+    "$description": "Extract color from last gradient stop",
+    "$type": "color",
+    "$ref": "#/base-gradient/$value/1/color"
+  },
+  "position-from-gradient": {
+    "$description": "Extract position number from gradient stop",
+    "$type": "number",
+    "$ref": "#/base-gradient/$value/1/position"
+  }
+}

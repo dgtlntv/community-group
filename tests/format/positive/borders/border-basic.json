@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "Basic border composite token",
+  "border": {
+    "$type": "border",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0.8, 0.8, 0.8]
+      },
+      "width": {
+        "value": 1,
+        "unit": "px"
+      },
+      "style": "solid"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: X coordinates (1st and 3rd values) must be [0-1], value 1.5 exceeds range",
+  "invalid-cubicBezier": {
+    "$type": "cubicBezier",
+    "$value": [1.5, 0, 0.58, 1]
+  }
+}

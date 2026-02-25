@@ -1,0 +1,17 @@
+{
+  "$description": "INVALID: Border style must be string or strokeStyle object, not number",
+  "invalid-border": {
+    "$type": "border",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0]
+      },
+      "width": {
+        "value": 1,
+        "unit": "px"
+      },
+      "style": 1
+    }
+  }
+}

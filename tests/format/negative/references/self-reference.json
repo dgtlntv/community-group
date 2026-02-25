@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Token references itself directly",
+  "self-reference": {
+    "$type": "color",
+    "$value": "{self-reference}"
+  }
+}

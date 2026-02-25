@@ -1,0 +1,16 @@
+{
+  "$description": "INVALID: JSON Pointer treating array index as string property",
+  "colors": {
+    "srgb-color": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  },
+  "invalid-json-pointer": {
+    "$ref": "#/colors/srgb-color/$value/components/first",
+    "$type": "number"
+  }
+}

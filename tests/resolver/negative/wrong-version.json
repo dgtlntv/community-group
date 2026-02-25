@@ -1,0 +1,23 @@
+{
+  "description": "INVALID: Wrong version",
+  "version": "2024.01",
+  "resolutionOrder": [
+    {
+      "type": "set",
+      "name": "base",
+      "sources": [
+        {
+          "color": {
+            "primary": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [1, 0, 0]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$description": "INVALID: Hex fallback must be 6-digit format, not 3-digit or 8-digit",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0],
+      "hex": "#f00"
+    }
+  }
+}

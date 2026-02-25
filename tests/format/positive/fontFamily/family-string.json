@@ -1,0 +1,7 @@
+{
+  "$description": "Font family as single string",
+  "font": {
+    "$type": "fontFamily",
+    "$value": "Helvetica Neue"
+  }
+}

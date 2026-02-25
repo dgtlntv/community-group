@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: Gradient stop missing required 'position' property",
+  "invalid-gradient": {
+    "$type": "gradient",
+    "$value": [
+      {
+        "color": {
+          "colorSpace": "srgb",
+          "components": [0, 0, 1]
+        }
+      },
+      {
+        "color": {
+          "colorSpace": "srgb",
+          "components": [1, 0, 0]
+        },
+        "position": 1
+      }
+    ]
+  }
+}

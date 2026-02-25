@@ -1,0 +1,22 @@
+{
+  "description": "INVALID: Inline set missing name",
+  "version": "2025.10",
+  "resolutionOrder": [
+    {
+      "type": "set",
+      "sources": [
+        {
+          "color": {
+            "primary": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0.2, 0.4, 0.8]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

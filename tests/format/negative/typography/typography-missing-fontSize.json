@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: Typography missing required 'fontSize' property",
+  "invalid-typography": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "Arial",
+      "fontWeight": 400,
+      "letterSpacing": {
+        "value": 0,
+        "unit": "px"
+      },
+      "lineHeight": 1.5
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "Basic shadow composite token",
+  "shadow": {
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0],
+        "alpha": 0.1
+      },
+      "offsetX": {
+        "value": 0,
+        "unit": "px"
+      },
+      "offsetY": {
+        "value": 2,
+        "unit": "px"
+      },
+      "blur": {
+        "value": 4,
+        "unit": "px"
+      },
+      "spread": {
+        "value": 0,
+        "unit": "px"
+      }
+    }
+  }
+}

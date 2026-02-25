@@ -1,0 +1,27 @@
+{
+  "description": "Resolver with $defs",
+  "version": "2025.10",
+  "sets": {
+    "colors": {
+      "sources": [
+        {
+          "color": {
+            "primary": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0.2, 0.4, 0.8]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "resolutionOrder": [{ "$ref": "#/sets/colors" }],
+  "$defs": {
+    "someDefinition": {
+      "example": "This is allowed but not required to be supported"
+    }
+  }
+}

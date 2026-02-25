@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Token value cannot be null",
+  "invalid-value": {
+    "$type": "color",
+    "$value": null
+  }
+}

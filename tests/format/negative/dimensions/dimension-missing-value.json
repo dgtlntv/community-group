@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: Dimension missing required 'value' property",
+  "invalid-dimension": {
+    "$type": "dimension",
+    "$value": {
+      "unit": "px"
+    }
+  }
+}

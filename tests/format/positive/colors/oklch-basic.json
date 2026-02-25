@@ -1,0 +1,11 @@
+{
+  "$description": "OKLCH color space",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "oklch",
+      "components": [0.7016, 0.3225, 328.363],
+      "hex": "#ff00ff"
+    }
+  }
+}

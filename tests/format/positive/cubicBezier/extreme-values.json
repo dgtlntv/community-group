@@ -1,0 +1,7 @@
+{
+  "$description": "Cubic Bezier with Y values outside 0-1 range (bounce effect)",
+  "easing": {
+    "$type": "cubicBezier",
+    "$value": [0.68, -0.55, 0.265, 1.55]
+  }
+}

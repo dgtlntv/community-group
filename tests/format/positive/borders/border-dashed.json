@@ -1,0 +1,17 @@
+{
+  "$description": "Border with dashed style",
+  "border": {
+    "$type": "border",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0, 0.4, 0.8]
+      },
+      "width": {
+        "value": 2,
+        "unit": "px"
+      },
+      "style": "dashed"
+    }
+  }
+}

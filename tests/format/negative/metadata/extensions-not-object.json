@@ -1,0 +1,11 @@
+{
+  "$description": "INVALID: $extensions must be an object, not array",
+  "invalid-extensions": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0]
+    },
+    "$extensions": ["extension1", "extension2"]
+  }
+}

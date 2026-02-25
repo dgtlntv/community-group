@@ -1,0 +1,18 @@
+{
+  "$description": "Type inheritance from parent group - requires preprocessing",
+  "colors": {
+    "$type": "color",
+    "primary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 0.4, 0.8]
+      }
+    },
+    "secondary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0.8, 0.4, 0]
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: 'customType' is not a valid/supported token type",
+  "invalid-type": {
+    "$type": "customType",
+    "$value": "some value"
+  }
+}

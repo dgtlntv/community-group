@@ -1,0 +1,11 @@
+{
+  "$description": "HWB (Hue, Whiteness, Blackness) color space",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "hwb",
+      "components": [120, 20, 30],
+      "hex": "#339933"
+    }
+  }
+}

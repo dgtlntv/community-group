@@ -1,6 +1,7 @@
 packages:
   - technical-reports
   - www
+  - schemas
 
 onlyBuiltDependencies:
   - puppeteer

@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: LCH chroma cannot be negative",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "lch",
+      "components": [50, -10, 180]
+    }
+  }
+}

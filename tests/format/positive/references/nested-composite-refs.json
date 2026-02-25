@@ -1,0 +1,63 @@
+{
+  "$description": "Deep nesting: referencing sub-values within composite token properties",
+  "base-border": {
+    "$type": "border",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0.3, 0.3, 0.3]
+      },
+      "width": {
+        "value": 2,
+        "unit": "px"
+      },
+      "style": {
+        "dashArray": [
+          {
+            "value": 10,
+            "unit": "px"
+          },
+          {
+            "value": 5,
+            "unit": "px"
+          }
+        ],
+        "lineCap": "round"
+      }
+    }
+  },
+  "stroke-from-border": {
+    "$description": "Extract strokeStyle from border's style property",
+    "$type": "strokeStyle",
+    "$ref": "#/base-border/$value/style"
+  },
+  "dimension-from-dash-array": {
+    "$description": "Extract dimension from first element of dashArray",
+    "$type": "dimension",
+    "$ref": "#/base-border/$value/style/dashArray/0"
+  },
+  "base-transition": {
+    "$type": "transition",
+    "$value": {
+      "duration": {
+        "value": 300,
+        "unit": "ms"
+      },
+      "delay": {
+        "value": 100,
+        "unit": "ms"
+      },
+      "timingFunction": [0.25, 0.1, 0.25, 1]
+    }
+  },
+  "duration-from-transition": {
+    "$description": "Extract duration from transition",
+    "$type": "duration",
+    "$ref": "#/base-transition/$value/duration"
+  },
+  "easing-from-transition": {
+    "$description": "Extract cubic bezier from transition",
+    "$type": "cubicBezier",
+    "$ref": "#/base-transition/$value/timingFunction"
+  }
+}

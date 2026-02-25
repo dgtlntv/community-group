@@ -1,0 +1,10 @@
+{
+  "$description": "Duration in milliseconds",
+  "duration": {
+    "$type": "duration",
+    "$value": {
+      "value": 300,
+      "unit": "ms"
+    }
+  }
+}

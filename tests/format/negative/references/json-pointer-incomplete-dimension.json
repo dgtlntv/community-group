@@ -1,0 +1,16 @@
+{
+  "$description": "INVALID: JSON Pointer references only the numeric value part of dimension, not complete dimension",
+  "dimensions": {
+    "spacing-small": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    }
+  },
+  "invalid-json-pointer": {
+    "$ref": "#/dimensions/spacing-small/$value/value",
+    "$type": "dimension"
+  }
+}

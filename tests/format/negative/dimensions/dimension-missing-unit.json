@@ -1,0 +1,9 @@
+{
+  "$description": "INVALID: Dimension missing required 'unit' property",
+  "invalid-dimension": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16
+    }
+  }
+}

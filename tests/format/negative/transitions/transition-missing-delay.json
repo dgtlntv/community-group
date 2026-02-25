@@ -1,0 +1,13 @@
+{
+  "$description": "INVALID: Transition missing required 'delay' property",
+  "invalid-transition": {
+    "$type": "transition",
+    "$value": {
+      "duration": {
+        "value": 200,
+        "unit": "ms"
+      },
+      "timingFunction": [0.42, 0, 0.58, 1]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$description": "INVALID: Token has no $type and not in a group with $type, making type indeterminate",
+  "missing-type": {
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0]
+    }
+  }
+}

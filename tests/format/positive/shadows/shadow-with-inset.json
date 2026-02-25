@@ -1,0 +1,30 @@
+{
+  "$description": "Inner shadow with inset property",
+  "shadow": {
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0],
+        "alpha": 0.2
+      },
+      "offsetX": {
+        "value": 0,
+        "unit": "px"
+      },
+      "offsetY": {
+        "value": 1,
+        "unit": "px"
+      },
+      "blur": {
+        "value": 2,
+        "unit": "px"
+      },
+      "spread": {
+        "value": 0,
+        "unit": "px"
+      },
+      "inset": true
+    }
+  }
+}

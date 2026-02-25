@@ -1,0 +1,11 @@
+{
+  "$description": "LAB color space",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "lab",
+      "components": [60.17, 93.54, -60.5],
+      "hex": "#ff00ff"
+    }
+  }
+}

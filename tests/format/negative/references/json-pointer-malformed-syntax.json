@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Malformed JSON Pointer syntax",
+  "invalid-json-pointer": {
+    "$ref": "##/invalid/path",
+    "$type": "color"
+  }
+}

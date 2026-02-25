@@ -1,0 +1,14 @@
+{
+  "name": "@dtcg/schemas",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DTCG JSON Schema source files and bundling",
+  "scripts": {
+    "build": "tsx build.ts"
+  },
+  "devDependencies": {
+    "@hyperjump/json-schema": "^1.14.3",
+    "tsx": "^4.21.0"
+  }
+}

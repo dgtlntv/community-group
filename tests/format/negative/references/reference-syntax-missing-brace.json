@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Reference missing closing brace",
+  "invalid-reference": {
+    "$type": "color",
+    "$value": "{colors.primary"
+  }
+}

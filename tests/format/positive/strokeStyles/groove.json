@@ -1,0 +1,7 @@
+{
+  "$description": "Groove stroke style",
+  "stroke": {
+    "$type": "strokeStyle",
+    "$value": "groove"
+  }
+}

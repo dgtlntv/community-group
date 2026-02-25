@@ -1,0 +1,15 @@
+{
+  "$description": "INVALID: Part of circular reference chain 1->2->3->1",
+  "circular-reference-chain-1": {
+    "$type": "dimension",
+    "$value": "{circular-reference-chain-2}"
+  },
+  "circular-reference-chain-2": {
+    "$type": "dimension",
+    "$value": "{circular-reference-chain-3}"
+  },
+  "circular-reference-chain-3": {
+    "$type": "dimension",
+    "$value": "{circular-reference-chain-1}"
+  }
+}

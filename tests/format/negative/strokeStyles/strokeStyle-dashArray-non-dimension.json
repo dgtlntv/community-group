@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: strokeStyle dashArray elements must be dimension objects, not plain numbers",
+  "invalid-strokeStyle": {
+    "$type": "strokeStyle",
+    "$value": {
+      "dashArray": [5, 3],
+      "lineCap": "round"
+    }
+  }
+}
