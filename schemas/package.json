@@ -5,10 +5,12 @@
   "type": "module",
   "description": "DTCG JSON Schema source files and bundling",
   "scripts": {
-    "build": "tsx build.ts"
+    "build": "tsx build.ts",
+    "build:sourcemeta": "tsx build-sourcemeta.ts"
   },
   "devDependencies": {
     "@hyperjump/json-schema": "^1.14.3",
+    "@sourcemeta/jsonschema": "^14.13.4",
     "tsx": "^4.21.0"
   }
 }
