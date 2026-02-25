@@ -75,16 +75,19 @@ function resolveSchemaId(schemaUrl: string): string {
 /**
  * Creates a fresh AJV instance with a single bundled schema loaded.
  * Each bundled schema is self-contained, so only one needs to be loaded at a time.
+ * Supports both schemas with $id (standard bundling) and without $id
+ * (sourcemeta --without-id bundling for VS Code compatibility).
  *
  * @param schemaFilename - The filename of the bundled schema to load
+ * @param schemaId - The schema ID to register under (used as key when $id is absent)
  * @returns A configured AJV instance
  */
-function createAjvWithSchema(schemaFilename: string): Ajv {
+function createAjvWithSchema(schemaFilename: string, schemaId: string): Ajv {
   const ajv = new Ajv({ strict: true, allErrors: true });
   addFormats(ajv);
   const schemaPath = join(paths.schemaDir, schemaFilename);
   const schema = JSON.parse(readFileSync(schemaPath, 'utf-8'));
-  ajv.addSchema(schema);
+  ajv.addSchema(schema, schema.$id ?? schemaId);
   return ajv;
 }
 
@@ -189,7 +192,7 @@ for (const { id, file } of rootManifest.manifests) {
     let ajv: Ajv;
 
     beforeAll(() => {
-      ajv = createAjvWithSchema(schemaFilename);
+      ajv = createAjvWithSchema(schemaFilename, schemaId);
     });
 
     it.each(testCases)('$name: $purpose', (testCase) => {

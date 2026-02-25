@@ -37,7 +37,7 @@ function bundleSchema(entrySchema: string, outputFilename: string): void {
   console.log(`\nBundling ${entrySchema}...`);
 
   const result = execSync(
-    `npx jsonschema bundle ${entrySchema} --resolve ${SOURCE_DIR}`,
+    `npx jsonschema bundle ${entrySchema} --resolve ${SOURCE_DIR} --without-id`,
     { cwd: __dirname, encoding: "utf-8" }
   );
 
