@@ -47,7 +47,7 @@ Given a resolver that references 5 files:
 
 One could inline the contents, resulting in:
 
-```json
+```jsonc
 {
   "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
   "sets": {
@@ -61,9 +61,9 @@ One could inline the contents, resulting in:
         },
         {
           // (contents of foundation/typography.json)
-        }
-      ]
-    }
+        },
+      ],
+    },
   },
   "modifiers": {
     "theme": {
@@ -74,7 +74,7 @@ One could inline the contents, resulting in:
           },
           {
             // (contents of theme/light.json)
-          }
+          },
         ],
         "dark": [
           {
@@ -82,15 +82,15 @@ One could inline the contents, resulting in:
           },
           {
             // (contents of theme/dark.json)
-          }
-        ]
-      }
-    }
+          },
+        ],
+      },
+    },
   },
   "resolutionOrder": [
     { "$ref": "#/sets/foundation" },
-    { "$ref": "#/modifiers/theme" }
-  ]
+    { "$ref": "#/modifiers/theme" },
+  ],
 }
 ```
 
@@ -112,7 +112,7 @@ The only downside of using `$defs` is some tools may choose to ignore it, as it 
 
 Given the same resolver [from the inlining section](#inlining-files), we can create a new top-level `$defs` key, and adding keys and values that correspond to filenames and its contents, respectively:
 
-```json
+```jsonc
 {
   "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
   "sets": {
@@ -120,27 +120,27 @@ Given the same resolver [from the inlining section](#inlining-files), we can cre
       "sources": [
         { "$ref": "#/$defs/foundation~1colors.json" },
         { "$ref": "#/$defs/foundation~1size.json" },
-        { "$ref": "#/$defs/foundation~1typography.json" }
-      ]
-    }
+        { "$ref": "#/$defs/foundation~1typography.json" },
+      ],
+    },
   },
   "modifiers": {
     "theme": {
       "contexts": {
         "light": [
           { "$ref": "#/$defs/foundation~1colors.json" },
-          { "$ref": "#/$defs/theme~1light.json" }
+          { "$ref": "#/$defs/theme~1light.json" },
         ],
         "dark": [
           { "$ref": "#/$defs/foundation~1colors.json" },
-          { "$ref": "#/$defs/theme~1dark.json" }
-        ]
-      }
-    }
+          { "$ref": "#/$defs/theme~1dark.json" },
+        ],
+      },
+    },
   },
   "resolutionOrder": [
     { "$ref": "#/sets/foundation" },
-    { "$ref": "#/modifiers/theme" }
+    { "$ref": "#/modifiers/theme" },
   ],
   "$defs": {
     "foundation/colors.json": {
@@ -157,8 +157,8 @@ Given the same resolver [from the inlining section](#inlining-files), we can cre
     },
     "theme/dark.json": {
       // (contents of theme/dark.json)
-    }
-  }
+    },
+  },
 }
 ```
 

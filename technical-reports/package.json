@@ -27,11 +27,16 @@
     "validate:index": "respec --localhost index.html --haltonerror --haltonwarn",
     "validate:format": "respec --localhost format/index.html --haltonerror --haltonwarn",
     "validate:color": "respec --localhost color/index.html --haltonerror --haltonwarn",
-    "validate:resolver": "respec --localhost resolver/index.html --haltonerror --haltonwarn"
+    "validate:resolver": "respec --localhost resolver/index.html --haltonerror --haltonwarn",
+    "test": "vitest run"
   },
   "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "chokidar": "^4.0.3",
     "chokidar-cli": "^3.0.0",
-    "respec": "^35.6.1"
+    "jsonc-parser": "^3.3.1",
+    "respec": "^35.6.1",
+    "vitest": "^4.0.15"
   }
 }

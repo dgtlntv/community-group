@@ -157,11 +157,11 @@ References MUST NOT be circular. If a design token file contains circular refere
 
 <aside class="example">
 
-```json
+```jsonc
 {
   "a": { "$value": "{b}" },
   "b": { "$value": "{c}" },
-  "c": { "$value": "{a}" } // Creates circular reference: a → b → c → a
+  "c": { "$value": "{a}" }, // Creates circular reference: a → b → c → a
 }
 ```
 
@@ -179,17 +179,17 @@ JSON Pointer syntax enables references to specific properties within composite t
 
 <aside class="example" title="Color Component References">
 
-```json
+```jsonc
 {
   "base": {
     "blue": {
       "$value": {
         "colorSpace": "srgb",
         "components": [0.2, 0.4, 0.9],
-        "hex": "#3366e6"
+        "hex": "#3366e6",
       },
-      "$type": "color"
-    }
+      "$type": "color",
+    },
   },
   "semantic": {
     // semantic.primary keeps the same red and green components as base.blue
@@ -200,11 +200,11 @@ JSON Pointer syntax enables references to specific properties within composite t
         "components": [
           { "$ref": "#/base/blue/$value/components/0" },
           { "$ref": "#/base/blue/$value/components/1" },
-          0.7
+          0.7,
         ],
-        "hex": "#3366b3"
+        "hex": "#3366b3",
       },
-      "$type": "color"
+      "$type": "color",
     },
     // semantic.secondary keeps the same red and green components as base.blue
     // but uses a different blue component (0.5)
@@ -214,15 +214,15 @@ JSON Pointer syntax enables references to specific properties within composite t
         "components": [
           { "$ref": "#/base/blue/$value/components/0" },
           { "$ref": "#/base/blue/$value/components/1" },
-          0.5
+          0.5,
         ],
-        "hex": "#336680"
+        "hex": "#336680",
       },
-      "$type": "color"
-    }
+      "$type": "color",
+    },
     // Changes to the hue of base.blue will automatically propagate
     // to both semantic colors
-  }
+  },
 }
 ```
 

@@ -303,7 +303,7 @@ Group extension follows **deep merge** behavior where local properties override 
 
 <aside class="example" title="Multi-level override">
 
-```json
+```jsonc
 {
   "base": {
     "color": {
@@ -311,13 +311,13 @@ Group extension follows **deep merge** behavior where local properties override 
       "$value": {
         "colorSpace": "srgb",
         "components": [0, 0.2, 0.8],
-        "hex": "#0033cc"
-      }
+        "hex": "#0033cc",
+      },
     },
     "spacing": {
       "$type": "dimension",
-      "$value": { "value": 16, "unit": "px" }
-    }
+      "$value": { "value": 16, "unit": "px" },
+    },
   },
   "extended": {
     "$extends": "{base}",
@@ -327,8 +327,8 @@ Group extension follows **deep merge** behavior where local properties override 
       "$value": {
         "colorSpace": "srgb",
         "components": [0.9, 0.05, 0],
-        "hex": "#e60d00"
-      }
+        "hex": "#e60d00",
+      },
     },
     // Adds new token
     "border": {
@@ -336,10 +336,10 @@ Group extension follows **deep merge** behavior where local properties override 
       "$value": {
         "width": { "value": 1, "unit": "px" },
         "style": "solid",
-        "color": "{extended.color}"
-      }
-    }
-  }
+        "color": "{extended.color}",
+      },
+    },
+  },
 }
 ```
 

@@ -151,13 +151,13 @@ A modifier MAY reference a [set](#sets) inside a context value. This is equivale
 
 Is equivalent to:
 
-```json
+```jsonc
 {
   "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
   "sets": {
     "baseSize": {
       // …
-    }
+    },
   },
   "modifiers": {
     "size": {
@@ -166,21 +166,21 @@ Is equivalent to:
         "small": [
           { "$ref": "size/base.json" },
           { "$ref": "device/mobile.json" },
-          { "$ref": "typography/mobile.json" }
+          { "$ref": "typography/mobile.json" },
         ],
         "medium": [
           { "$ref": "size/base.json" },
           { "$ref": "device/tablet.json" },
-          { "$ref": "typography/base.json" }
+          { "$ref": "typography/base.json" },
         ],
         "large": [
           { "$ref": "size/base.json" },
           { "$ref": "device/desktop.json" },
-          { "$ref": "typography/base.json" }
-        ]
-      }
-    }
-  }
+          { "$ref": "typography/base.json" },
+        ],
+      },
+    },
+  },
 }
 ```
 
@@ -322,7 +322,7 @@ In case of any conflict, the last occurrence of a design token produces the fina
 
 Modifiers MAY contain empty context arrays:
 
-```json
+```jsonc
 {
   "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
   "modifiers": {
@@ -331,14 +331,14 @@ Modifiers MAY contain empty context arrays:
       "description": "Enable debug mode",
       "contexts": {
         "false": [],
-        "true": [{ "$ref": "debug.json" }]
-      }
-    }
+        "true": [{ "$ref": "debug.json" }],
+      },
+    },
   },
   "resolutionOrder": [
     // …
-    { "$ref": "#/modifiers/debug" }
-  ]
+    { "$ref": "#/modifiers/debug" },
+  ],
 }
 ```
 
