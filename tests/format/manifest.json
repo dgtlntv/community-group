@@ -501,6 +501,22 @@
       "features": ["references", "json-pointer", "preprocessing-required"]
     },
     {
+      "id": "reference-color-components-array-ref",
+      "type": "PositiveEvaluationTest",
+      "name": "JSON Pointer to entire color components array",
+      "purpose": "Verifies that JSON Pointer can reference an entire components array within a color token value",
+      "input": "positive/references/color-components-array-ref.json",
+      "features": ["references", "json-pointer", "color"]
+    },
+    {
+      "id": "reference-strokestyle-dasharray-ref",
+      "type": "PositiveEvaluationTest",
+      "name": "JSON Pointer to entire strokeStyle dashArray",
+      "purpose": "Verifies that JSON Pointer can reference an entire dashArray within a strokeStyle token value",
+      "input": "positive/references/strokestyle-dasharray-ref.json",
+      "features": ["references", "json-pointer", "strokeStyle"]
+    },
+    {
       "id": "reference-chained-reference",
       "type": "PositiveEvaluationTest",
       "name": "Chained reference",

@@ -62,22 +62,26 @@ function loadSchemas(ajv: Ajv, dir: string): void {
 }
 
 /**
- * Extracts the schema ID from a full schema URL.
+ * Normalizes a schema URL to match the format used in schema $id properties.
  *
- * @param schemaUrl - The full schema URL (e.g., "https://designtokens.org/schemas/2025.10/format.json")
- * @returns The extracted schema ID (e.g., "schemas/2025.10/format.json")
+ * @param schemaUrl - The schema URL from the manifest (e.g., "https://designtokens.org/schemas/2025.10/format.json")
+ * @returns The normalized schema ID matching the $id format (e.g., "https://www.designtokens.org/schemas/2025.10/format.json")
  * @throws Error if the URL format is invalid
  *
  * @example
- * extractSchemaId("https://designtokens.org/schemas/2025.10/format.json")
- * // Returns: "schemas/2025.10/format.json"
+ * normalizeSchemaId("https://designtokens.org/schemas/2025.10/format.json")
+ * // Returns: "https://www.designtokens.org/schemas/2025.10/format.json"
  */
-function extractSchemaId(schemaUrl: string): string {
-  const match = schemaUrl.match(/schemas\/[\d.]+\/[\w-]+\.json$/);
-  if (!match) {
+function normalizeSchemaId(schemaUrl: string): string {
+  // Validate the URL format
+  if (!schemaUrl.includes('designtokens.org/schemas/')) {
     throw new Error(`Invalid schema URL format: ${schemaUrl}`);
   }
-  return match[0];
+  // Normalize to match schema $id format (ensure www. prefix)
+  return schemaUrl.replace(
+    'https://designtokens.org/',
+    'https://www.designtokens.org/'
+  );
 }
 
 /**
@@ -185,7 +189,7 @@ for (const { id, file } of rootManifest.manifests) {
   const manifestPath = join(paths.testsDir, file);
   const subManifest = loadJsonFile<SubManifest>(manifestPath, `sub-manifest ${id}`);
   const testCases = subManifest.tests.filter((t) => !requiresPreprocessing(t));
-  const schemaId = extractSchemaId(subManifest.schema);
+  const schemaId = normalizeSchemaId(subManifest.schema);
 
   describe(subManifest.name, () => {
     it.each(testCases)('$name: $purpose', (testCase) => {
