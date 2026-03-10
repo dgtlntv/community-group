@@ -2,10 +2,8 @@
   "description": "Resolver with sets",
   "name": "Design System Tokens",
   "version": "2025.10",
-  "description": "A complete design system with color and size tokens",
   "sets": {
     "colors": {
-      "description": "Color tokens",
       "sources": [
         {
           "color": {
@@ -23,7 +21,6 @@
       ]
     },
     "sizes": {
-      "description": "Size tokens",
       "sources": [
         {
           "space": {
