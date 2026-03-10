@@ -1,0 +1,14 @@
+{
+  "$description": "INVALID: Border color sub-value has wrong type (string instead of color object)",
+  "invalid-border": {
+    "$type": "border",
+    "$value": {
+      "color": "red",
+      "width": {
+        "value": 1,
+        "unit": "px"
+      },
+      "style": "solid"
+    }
+  }
+}

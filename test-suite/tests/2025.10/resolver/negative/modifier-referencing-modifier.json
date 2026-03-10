@@ -1,0 +1,52 @@
+{
+  "description": "INVALID: Modifier referencing another modifier",
+  "version": "2025.10",
+  "sets": {
+    "colors": {
+      "sources": [
+        {
+          "color": {
+            "primary": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0.2, 0.4, 0.8]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "modifiers": {
+    "theme": {
+      "description": "Modifier trying to reference another modifier",
+      "contexts": {
+        "light": [{ "$ref": "#/modifiers/otherTheme" }],
+        "dark": [
+          {
+            "color": {
+              "background": {
+                "$type": "color",
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [0, 0, 0]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "otherTheme": {
+      "contexts": {
+        "a": [{}],
+        "b": [{}]
+      }
+    }
+  },
+  "resolutionOrder": [
+    { "$ref": "#/sets/colors" },
+    { "$ref": "#/modifiers/theme" }
+  ]
+}

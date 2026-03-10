@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "INVALID: 'wavy' is not a valid stroke style string value",
+  "invalid-strokeStyle": {
+    "$type": "strokeStyle",
+    "$value": "wavy"
+  }
+}

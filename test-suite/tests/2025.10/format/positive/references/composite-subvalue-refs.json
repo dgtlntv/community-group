@@ -1,0 +1,44 @@
+{
+  "$description": "Referencing sub-values of composite tokens using JSON Pointer",
+  "base-shadow": {
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0],
+        "alpha": 0.25
+      },
+      "offsetX": {
+        "value": 2,
+        "unit": "px"
+      },
+      "offsetY": {
+        "value": 4,
+        "unit": "px"
+      },
+      "blur": {
+        "value": 8,
+        "unit": "px"
+      },
+      "spread": {
+        "value": 1,
+        "unit": "px"
+      }
+    }
+  },
+  "shadow-color-only": {
+    "$description": "Extract just the color sub-value from shadow",
+    "$type": "color",
+    "$ref": "#/base-shadow/$value/color"
+  },
+  "shadow-blur-only": {
+    "$description": "Extract just the blur dimension from shadow",
+    "$type": "dimension",
+    "$ref": "#/base-shadow/$value/blur"
+  },
+  "shadow-offsetX-value": {
+    "$description": "Extract the numeric value part of offsetX dimension",
+    "$type": "number",
+    "$ref": "#/base-shadow/$value/offsetX/value"
+  }
+}

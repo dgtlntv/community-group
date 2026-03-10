@@ -1,0 +1,11 @@
+{
+  "$description": "Token marked as deprecated with replacement message",
+  "token": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    },
+    "$deprecated": "Use spacing.base instead"
+  }
+}

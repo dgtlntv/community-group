@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: 'cmyk' is not a supported color space",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "cmyk",
+      "components": [0, 100, 100, 0]
+    }
+  }
+}

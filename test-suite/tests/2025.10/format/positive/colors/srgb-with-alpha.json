@@ -1,0 +1,12 @@
+{
+  "$description": "sRGB color with alpha transparency",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [0.2, 0.4, 0.8],
+      "alpha": 0.5,
+      "hex": "#3366cc"
+    }
+  }
+}

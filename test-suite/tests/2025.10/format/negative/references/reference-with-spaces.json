@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Reference syntax with improper spacing or formatting",
+  "invalid-reference": {
+    "$type": "color",
+    "$value": "{ colors . srgb-color }"
+  }
+}

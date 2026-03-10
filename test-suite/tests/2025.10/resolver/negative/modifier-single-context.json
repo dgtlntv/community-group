@@ -1,0 +1,25 @@
+{
+  "description": "INVALID: Modifier with single context",
+  "version": "2025.10",
+  "modifiers": {
+    "theme": {
+      "description": "Only one context - should have at least 2",
+      "contexts": {
+        "light": [
+          {
+            "color": {
+              "background": {
+                "$type": "color",
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [1, 1, 1]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "resolutionOrder": [{ "$ref": "#/modifiers/theme" }]
+}

@@ -1,0 +1,16 @@
+{
+  "$description": "INVALID: Object cannot be both a token ($value present) and a group (children present)",
+  "invalid-both": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0]
+    },
+    "child-token": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 1, 0]
+      }
+    }
+  }
+}

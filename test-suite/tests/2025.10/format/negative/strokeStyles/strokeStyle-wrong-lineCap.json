@@ -1,0 +1,15 @@
+{
+  "$description": "INVALID: lineCap must be 'round', 'butt', or 'square', not 'beveled'",
+  "invalid-strokeStyle": {
+    "$type": "strokeStyle",
+    "$value": {
+      "dashArray": [
+        {
+          "value": 5,
+          "unit": "px"
+        }
+      ],
+      "lineCap": "beveled"
+    }
+  }
+}

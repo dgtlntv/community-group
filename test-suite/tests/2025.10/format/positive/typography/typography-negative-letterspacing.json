@@ -1,0 +1,19 @@
+{
+  "$description": "Typography with negative letter spacing",
+  "typography": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": {
+        "value": 32,
+        "unit": "px"
+      },
+      "fontWeight": 700,
+      "letterSpacing": {
+        "value": -0.5,
+        "unit": "px"
+      },
+      "lineHeight": 1.2
+    }
+  }
+}

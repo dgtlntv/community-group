@@ -1,0 +1,20 @@
+{
+  "$description": "INVALID: Token cannot have both $ref and $value properties",
+  "colors": {
+    "srgb-color": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  },
+  "invalid-ref": {
+    "$ref": "#/colors/srgb-color/$value",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0]
+    },
+    "$type": "color"
+  }
+}

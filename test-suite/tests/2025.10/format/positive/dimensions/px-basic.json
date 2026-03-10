@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../../../schemas/format/format.json",
+  "$description": "Dimension with pixel unit",
+  "spacing": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  }
+}

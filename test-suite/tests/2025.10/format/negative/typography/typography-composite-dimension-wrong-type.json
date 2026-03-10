@@ -1,0 +1,16 @@
+{
+  "$description": "INVALID: Typography fontSize sub-value is number instead of dimension object",
+  "invalid-typography": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "Arial",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "letterSpacing": {
+        "value": 0,
+        "unit": "px"
+      },
+      "lineHeight": 1.5
+    }
+  }
+}

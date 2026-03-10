@@ -1,0 +1,11 @@
+{
+  "$description": "INVALID: $deprecated must be boolean or string, not number",
+  "invalid-deprecated": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 0]
+    },
+    "$deprecated": 1
+  }
+}

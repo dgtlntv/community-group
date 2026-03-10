@@ -1,0 +1,20 @@
+{
+  "$description": "INVALID: StrokeStyle dashArray element references number instead of dimension",
+  "numbers": {
+    "line-height-normal": {
+      "$type": "number",
+      "$value": 1.5
+    }
+  },
+  "invalid-stroke": {
+    "$type": "strokeStyle",
+    "$value": {
+      "dashArray": [
+        {
+          "$ref": "#/numbers/line-height-normal/$value"
+        }
+      ],
+      "lineCap": "round"
+    }
+  }
+}

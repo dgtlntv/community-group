@@ -1,0 +1,7 @@
+{
+  "$description": "Dotted stroke style as string",
+  "stroke": {
+    "$type": "strokeStyle",
+    "$value": "dotted"
+  }
+}

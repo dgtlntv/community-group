@@ -1,0 +1,10 @@
+{
+  "$description": "Duration in seconds",
+  "duration": {
+    "$type": "duration",
+    "$value": {
+      "value": 1.5,
+      "unit": "s"
+    }
+  }
+}

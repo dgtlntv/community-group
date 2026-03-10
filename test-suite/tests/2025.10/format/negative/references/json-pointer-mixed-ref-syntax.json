@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Mixing JSON Pointer and curly brace reference syntax",
+  "invalid-json-pointer": {
+    "$ref": "#/colors/{srgb-color}/$value",
+    "$type": "color"
+  }
+}

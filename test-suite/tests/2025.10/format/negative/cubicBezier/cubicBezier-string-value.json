@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Cubic Bezier values must be numbers, not strings",
+  "invalid-cubicBezier": {
+    "$type": "cubicBezier",
+    "$value": ["0.42", "0", "0.58", "1"]
+  }
+}

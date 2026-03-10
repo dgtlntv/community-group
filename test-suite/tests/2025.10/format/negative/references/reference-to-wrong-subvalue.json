@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: Reference using curly braces cannot target sub-properties, only complete token values",
+  "invalid-reference": {
+    "$type": "number",
+    "$value": "{colors.srgb-color.components.0}"
+  }
+}

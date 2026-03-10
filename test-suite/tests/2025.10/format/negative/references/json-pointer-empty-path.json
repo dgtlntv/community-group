@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: JSON Pointer with only hash, no path",
+  "invalid-json-pointer": {
+    "$ref": "#",
+    "$type": "color"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$description": "INVALID: JSON Pointer references $description instead of value",
+  "colors": {
+    "srgb-color": {
+      "$description": "A red color",
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  },
+  "invalid-json-pointer": {
+    "$ref": "#/colors/srgb-color/$description",
+    "$type": "color"
+  }
+}

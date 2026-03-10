@@ -11,11 +11,15 @@
   },
   "scripts": {
     "build": "tsx scripts/bundle.ts",
+    "test": "vitest run",
     "lint": "prettier . --check",
     "format": "prettier . --format --write"
   },
   "devDependencies": {
     "@hyperjump/json-schema": "^1.14.3",
-    "tsx": "^4.19.4"
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "tsx": "^4.19.4",
+    "vitest": "^4.0.15"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "description": "INVALID: Set missing sources",
+  "version": "2025.10",
+  "sets": {
+    "colors": {
+      "description": "Missing sources property"
+    }
+  },
+  "resolutionOrder": [{ "$ref": "#/sets/colors" }]
+}

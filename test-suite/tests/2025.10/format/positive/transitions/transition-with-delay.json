@@ -1,0 +1,17 @@
+{
+  "$description": "Transition with non-zero delay",
+  "transition": {
+    "$type": "transition",
+    "$value": {
+      "duration": {
+        "value": 1,
+        "unit": "s"
+      },
+      "delay": {
+        "value": 500,
+        "unit": "ms"
+      },
+      "timingFunction": [0.42, 0, 0.58, 1]
+    }
+  }
+}

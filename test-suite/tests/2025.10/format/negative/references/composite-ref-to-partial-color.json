@@ -1,0 +1,36 @@
+{
+  "$description": "INVALID: Shadow color references only components array, not complete color object",
+  "colors": {
+    "srgb-color": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  },
+  "invalid-composite": {
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "$ref": "#/colors/srgb-color/$value/components"
+      },
+      "offsetX": {
+        "value": 0,
+        "unit": "px"
+      },
+      "offsetY": {
+        "value": 2,
+        "unit": "px"
+      },
+      "blur": {
+        "value": 4,
+        "unit": "px"
+      },
+      "spread": {
+        "value": 0,
+        "unit": "px"
+      }
+    }
+  }
+}

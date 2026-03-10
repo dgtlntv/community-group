@@ -1,0 +1,37 @@
+{
+  "description": "INVALID: Inline modifier missing type",
+  "version": "2025.10",
+  "resolutionOrder": [
+    {
+      "name": "theme",
+      "contexts": {
+        "light": [
+          {
+            "color": {
+              "background": {
+                "$type": "color",
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [1, 1, 1]
+                }
+              }
+            }
+          }
+        ],
+        "dark": [
+          {
+            "color": {
+              "background": {
+                "$type": "color",
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [0, 0, 0]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

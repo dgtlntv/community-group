@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: dashArray cannot be empty",
+  "invalid-strokeStyle": {
+    "$type": "strokeStyle",
+    "$value": {
+      "dashArray": [],
+      "lineCap": "round"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: sRGB component values must be [0-1], value 2 exceeds range",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 0, 2]
+    }
+  }
+}

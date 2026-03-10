@@ -1,0 +1,15 @@
+{
+  "$description": "INVALID: Gradient position must be a number, not a string",
+  "invalid-gradient": {
+    "$type": "gradient",
+    "$value": [
+      {
+        "color": {
+          "colorSpace": "srgb",
+          "components": [0, 0, 1]
+        },
+        "position": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "description": "Resolver with sets",
+  "name": "Design System Tokens",
+  "version": "2025.10",
+  "description": "A complete design system with color and size tokens",
+  "sets": {
+    "colors": {
+      "description": "Color tokens",
+      "sources": [
+        {
+          "color": {
+            "brand": {
+              "primary": {
+                "$type": "color",
+                "$value": {
+                  "colorSpace": "srgb",
+                  "components": [0.2, 0.4, 0.8]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "sizes": {
+      "description": "Size tokens",
+      "sources": [
+        {
+          "space": {
+            "small": {
+              "$type": "dimension",
+              "$value": {
+                "value": 8,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "resolutionOrder": [{ "$ref": "#/sets/colors" }, { "$ref": "#/sets/sizes" }]
+}

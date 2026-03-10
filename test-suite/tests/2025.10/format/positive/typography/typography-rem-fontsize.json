@@ -1,0 +1,19 @@
+{
+  "$description": "Typography with rem font size",
+  "typography": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "system-ui",
+      "fontSize": {
+        "value": 0.875,
+        "unit": "rem"
+      },
+      "fontWeight": 400,
+      "letterSpacing": {
+        "value": 0.5,
+        "unit": "px"
+      },
+      "lineHeight": 1.4
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$description": "Composite tokens reusing sub-values from other composite tokens",
+  "base-shadow": {
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0],
+        "alpha": 0.3
+      },
+      "offsetX": {
+        "value": 2,
+        "unit": "px"
+      },
+      "offsetY": {
+        "value": 4,
+        "unit": "px"
+      },
+      "blur": {
+        "value": 8,
+        "unit": "px"
+      },
+      "spread": {
+        "value": 1,
+        "unit": "px"
+      }
+    }
+  },
+  "border-reusing-shadow-color": {
+    "$description": "Border that reuses the color from a shadow token",
+    "$type": "border",
+    "$value": {
+      "color": {
+        "$ref": "#/base-shadow/$value/color"
+      },
+      "width": {
+        "$ref": "#/base-shadow/$value/spread"
+      },
+      "style": "solid"
+    }
+  },
+  "dimension-from-shadow": {
+    "$description": "Standalone dimension referencing a dimension within a shadow",
+    "$type": "dimension",
+    "$ref": "#/base-shadow/$value/offsetY"
+  }
+}

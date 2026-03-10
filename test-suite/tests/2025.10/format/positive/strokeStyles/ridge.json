@@ -1,0 +1,7 @@
+{
+  "$description": "Ridge stroke style",
+  "stroke": {
+    "$type": "strokeStyle",
+    "$value": "ridge"
+  }
+}

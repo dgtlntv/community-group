@@ -1,0 +1,7 @@
+{
+  "$description": "INVALID: JSON Pointer uses wrong separator (dot instead of slash)",
+  "invalid-json-pointer": {
+    "$ref": "#/colors.primary.$value",
+    "$type": "color"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: OKLAB lightness must be [0-1], value 1.5 exceeds range",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "oklab",
+      "components": [1.5, 0, 0]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Minimal resolver configuration",
+  "version": "2025.10",
+  "resolutionOrder": [
+    {
+      "type": "set",
+      "name": "base",
+      "sources": [
+        {
+          "color": {
+            "primary": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [1, 0, 0]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

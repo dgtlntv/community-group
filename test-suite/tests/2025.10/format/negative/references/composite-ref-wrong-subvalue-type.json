@@ -1,0 +1,36 @@
+{
+  "$description": "INVALID: Composite token with $ref to wrong type for sub-value",
+  "dimensions": {
+    "spacing-small": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    }
+  },
+  "invalid-composite": {
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "$ref": "#/dimensions/spacing-small/$value"
+      },
+      "offsetX": {
+        "value": 0,
+        "unit": "px"
+      },
+      "offsetY": {
+        "value": 2,
+        "unit": "px"
+      },
+      "blur": {
+        "value": 4,
+        "unit": "px"
+      },
+      "spread": {
+        "value": 0,
+        "unit": "px"
+      }
+    }
+  }
+}

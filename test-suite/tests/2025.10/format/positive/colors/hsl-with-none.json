@@ -1,0 +1,11 @@
+{
+  "$description": "HSL color with 'none' keyword for hue (achromatic white)",
+  "color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "hsl",
+      "components": ["none", 0, 100],
+      "hex": "#ffffff"
+    }
+  }
+}

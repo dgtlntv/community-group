@@ -14,5 +14,8 @@
       ]
     }
   ],
-  "outputDirs": ["dist", "../www/public/schemas"]
+  "sourceDir": "src",
+  "distDir": "dist",
+  "outputDirs": ["dist", "../www/public/schemas"],
+  "testSuiteDir": "../test-suite/tests"
 }

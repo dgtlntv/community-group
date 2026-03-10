@@ -1,0 +1,10 @@
+{
+  "$description": "INVALID: LAB lightness must be [0-100], value 150 exceeds range",
+  "invalid-color": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "lab",
+      "components": [150, 0, 0]
+    }
+  }
+}

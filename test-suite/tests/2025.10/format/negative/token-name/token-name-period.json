@@ -1,0 +1,12 @@
+{
+  "$description": "INVALID: Token names cannot contain periods",
+  "group": {
+    "token.invalid": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [1, 0, 0]
+      }
+    }
+  }
+}

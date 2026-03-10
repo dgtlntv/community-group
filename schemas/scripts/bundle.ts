@@ -44,6 +44,8 @@ interface VersionConfig {
 interface SchemasConfig {
   /** One entry per DTCG specification version to bundle. */
   versions: VersionConfig[];
+  /** Directory containing the split source schemas, relative to the package root. */
+  sourceDir: string;
   /** Output directories relative to the package root. Each gets a `<version>/` subdirectory. */
   outputDirs: string[];
 }
@@ -146,7 +148,7 @@ async function main(): Promise<void> {
   for (const { version, entrySchemas } of config.versions) {
     console.log(`\n=== Version ${version} ===`);
 
-    const sourceDir = join(ROOT_DIR, 'src', version);
+    const sourceDir = join(ROOT_DIR, config.sourceDir, version);
     const outputDirs = config.outputDirs.map((dir) =>
       join(ROOT_DIR, dir, version),
     );

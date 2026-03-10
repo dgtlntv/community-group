@@ -1,0 +1,40 @@
+{
+  "$description": "Composite token with references to other tokens",
+  "colors": {
+    "$type": "color",
+    "black": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0],
+        "alpha": 0.2
+      }
+    }
+  },
+  "spacing": {
+    "$type": "dimension",
+    "small": {
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      }
+    }
+  },
+  "shadows": {
+    "$type": "shadow",
+    "default": {
+      "$value": {
+        "color": "{colors.black}",
+        "offsetX": "{spacing.small}",
+        "offsetY": "{spacing.small}",
+        "blur": {
+          "value": 8,
+          "unit": "px"
+        },
+        "spread": {
+          "value": 0,
+          "unit": "px"
+        }
+      }
+    }
+  }
+}

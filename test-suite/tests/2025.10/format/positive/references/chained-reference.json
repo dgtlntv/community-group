@@ -1,0 +1,24 @@
+{
+  "$description": "Chained reference (reference to a reference)",
+  "colors": {
+    "$type": "color",
+    "blue": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [0, 0.4, 0.8]
+      }
+    }
+  },
+  "semantic": {
+    "primary": {
+      "$type": "color",
+      "$value": "{colors.blue}"
+    }
+  },
+  "aliases": {
+    "brand": {
+      "$type": "color",
+      "$value": "{semantic.primary}"
+    }
+  }
+}

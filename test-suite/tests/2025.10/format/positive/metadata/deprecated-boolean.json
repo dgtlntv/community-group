@@ -1,0 +1,11 @@
+{
+  "$description": "Token marked as deprecated with boolean",
+  "token": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [0.5, 0.5, 0.5]
+    },
+    "$deprecated": true
+  }
+}
