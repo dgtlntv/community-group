@@ -1,0 +1,18 @@
+{
+  "versions": [
+    {
+      "version": "2025.10",
+      "entrySchemas": [
+        {
+          "id": "https://www.designtokens.org/schemas/2025.10/format.json",
+          "filename": "format.json"
+        },
+        {
+          "id": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+          "filename": "resolver.json"
+        }
+      ]
+    }
+  ],
+  "outputDirs": ["dist", "../www/public/schemas"]
+}
