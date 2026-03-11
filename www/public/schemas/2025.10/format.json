@@ -12,7 +12,7 @@
       "$comment": "$schema is not part of the official DTCG specification."
     },
     "$type": {
-      "$ref": "format/tokenType.json"
+      "$ref": "https://www.designtokens.org/schemas/2025.10/format/tokenType.json"
     },
     "$description": {
       "type": "string",
@@ -45,12 +45,12 @@
       "description": "Whether this group is deprecated"
     },
     "$root": {
-      "$ref": "format/token.json"
+      "$ref": "https://www.designtokens.org/schemas/2025.10/format/token.json"
     }
   },
   "patternProperties": {
     "^[^${}.][^{}.]*$": {
-      "$ref": "format/groupOrToken.json"
+      "$ref": "https://www.designtokens.org/schemas/2025.10/format/groupOrToken.json"
     }
   },
   "additionalProperties": false,
@@ -133,10 +133,10 @@
           "description": "The token's value - can be a direct value or a reference to another token using curly brace syntax (e.g., '{token.name}'). Mutually exclusive with $ref."
         },
         "$type": {
-          "$ref": "tokenType.json"
+          "$ref": "https://www.designtokens.org/schemas/2025.10/format/tokenType.json"
         },
         "$ref": {
-          "$ref": "../format.json#/definitions/jsonPointerReference"
+          "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReference"
         },
         "$description": {
           "type": "string",
@@ -205,10 +205,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/color.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/color.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -231,10 +231,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/dimension.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -257,10 +257,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/fontFamily.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/fontFamily.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -283,10 +283,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/fontWeight.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/fontWeight.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -309,10 +309,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/duration.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/duration.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -335,10 +335,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/cubicBezier.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/cubicBezier.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -361,10 +361,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/number.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/number.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -387,10 +387,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/strokeStyle.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/strokeStyle.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -413,10 +413,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/border.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/border.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -439,10 +439,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/transition.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/transition.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -465,10 +465,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/shadow.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/shadow.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -491,10 +491,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/gradient.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/gradient.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -517,10 +517,10 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/typography.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/typography.json"
                   },
                   {
-                    "$ref": "../format.json#/definitions/tokenValueReference"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                   }
                 ]
               }
@@ -546,7 +546,7 @@
                 "properties": {
                   "$value": {
                     "not": {
-                      "$ref": "../format.json#/definitions/tokenValueReference"
+                      "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                     }
                   }
                 }
@@ -558,45 +558,45 @@
               "$value": {
                 "oneOf": [
                   {
-                    "$ref": "values/color.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/color.json"
                   },
                   {
-                    "$ref": "values/dimension.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
                   },
                   {
-                    "$ref": "values/fontFamily.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/fontFamily.json"
                   },
                   {
-                    "$ref": "values/duration.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/duration.json"
                   },
                   {
-                    "$ref": "values/cubicBezier.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/cubicBezier.json"
                   },
                   {
-                    "$ref": "values/strokeStyle.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/strokeStyle.json"
                   },
                   {
-                    "$ref": "values/border.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/border.json"
                   },
                   {
-                    "$ref": "values/transition.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/transition.json"
                   },
                   {
-                    "$ref": "values/shadow.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/shadow.json"
                   },
                   {
-                    "$ref": "values/gradient.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/gradient.json"
                   },
                   {
-                    "$ref": "values/typography.json"
+                    "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/typography.json"
                   },
                   {
                     "anyOf": [
                       {
-                        "$ref": "values/number.json"
+                        "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/number.json"
                       },
                       {
-                        "$ref": "values/fontWeight.json"
+                        "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/fontWeight.json"
                       }
                     ]
                   }
@@ -637,7 +637,7 @@
               ]
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -648,7 +648,7 @@
               "type": "array"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -661,7 +661,7 @@
               "maximum": 1
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -674,7 +674,7 @@
               "pattern": "^#[0-9a-fA-F]{6}$"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         }
@@ -699,7 +699,7 @@
               "const": "none"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -717,7 +717,7 @@
               "const": "none"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -735,7 +735,7 @@
               "const": "none"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -752,7 +752,7 @@
               "const": "none"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -768,7 +768,7 @@
               "const": "none"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -1170,7 +1170,7 @@
               "type": "number"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -1185,7 +1185,7 @@
               ]
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         }
@@ -1206,7 +1206,7 @@
           "type": "string",
           "description": "A single font name",
           "not": {
-            "$ref": "../../format.json#/definitions/curlyBraceReference"
+            "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/curlyBraceReference"
           }
         },
         {
@@ -1217,11 +1217,11 @@
               {
                 "type": "string",
                 "not": {
-                  "$ref": "../../format.json#/definitions/curlyBraceReference"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/curlyBraceReference"
                 }
               },
               {
-                "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+                "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
               }
             ]
           },
@@ -1281,7 +1281,7 @@
               "type": "number"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -1296,7 +1296,7 @@
               ]
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         }
@@ -1341,7 +1341,7 @@
               "maximum": 1
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         },
@@ -1353,7 +1353,7 @@
               "type": "number"
             },
             {
-              "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
             }
           ]
         }
@@ -1397,17 +1397,17 @@
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "dimension.json"
+                        "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
                       },
                       {
-                        "$ref": "../../format.json#/definitions/tokenValueReference"
+                        "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                       }
                     ]
                   },
                   "minItems": 1
                 },
                 {
-                  "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
                 }
               ]
             },
@@ -1423,7 +1423,7 @@
                   ]
                 },
                 {
-                  "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
                 }
               ]
             }
@@ -1447,10 +1447,10 @@
           "description": "The color of the border",
           "oneOf": [
             {
-              "$ref": "color.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/color.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         },
@@ -1458,10 +1458,10 @@
           "description": "The width or thickness of the border",
           "oneOf": [
             {
-              "$ref": "dimension.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         },
@@ -1469,10 +1469,10 @@
           "description": "The border's style",
           "oneOf": [
             {
-              "$ref": "strokeStyle.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/strokeStyle.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         }
@@ -1495,10 +1495,10 @@
           "description": "The duration of the transition",
           "oneOf": [
             {
-              "$ref": "duration.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/duration.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         },
@@ -1506,10 +1506,10 @@
           "description": "The time to wait before the transition begins",
           "oneOf": [
             {
-              "$ref": "duration.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/duration.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         },
@@ -1517,10 +1517,10 @@
           "description": "The timing function of the transition",
           "oneOf": [
             {
-              "$ref": "cubicBezier.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/cubicBezier.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         }
@@ -1550,7 +1550,7 @@
                 "$ref": "#/definitions/shadowObject"
               },
               {
-                "$ref": "../../format.json#/definitions/tokenValueReference"
+                "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
               }
             ]
           },
@@ -1566,10 +1566,10 @@
               "description": "The color of the shadow",
               "oneOf": [
                 {
-                  "$ref": "color.json"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/color.json"
                 },
                 {
-                  "$ref": "../../format.json#/definitions/tokenValueReference"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                 }
               ]
             },
@@ -1577,10 +1577,10 @@
               "description": "The horizontal offset that shadow has from the element it is applied to",
               "oneOf": [
                 {
-                  "$ref": "dimension.json"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
                 },
                 {
-                  "$ref": "../../format.json#/definitions/tokenValueReference"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                 }
               ]
             },
@@ -1588,10 +1588,10 @@
               "description": "The vertical offset that shadow has from the element it is applied to",
               "oneOf": [
                 {
-                  "$ref": "dimension.json"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
                 },
                 {
-                  "$ref": "../../format.json#/definitions/tokenValueReference"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                 }
               ]
             },
@@ -1599,10 +1599,10 @@
               "description": "The blur radius that is applied to the shadow",
               "oneOf": [
                 {
-                  "$ref": "dimension.json"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
                 },
                 {
-                  "$ref": "../../format.json#/definitions/tokenValueReference"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                 }
               ]
             },
@@ -1610,10 +1610,10 @@
               "description": "The amount by which to expand or contract the shadow",
               "oneOf": [
                 {
-                  "$ref": "dimension.json"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
                 },
                 {
-                  "$ref": "../../format.json#/definitions/tokenValueReference"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                 }
               ]
             },
@@ -1624,7 +1624,7 @@
                   "type": "boolean"
                 },
                 {
-                  "$ref": "../../format.json#/definitions/jsonPointerReferenceObject"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
                 }
               ]
             }
@@ -1652,7 +1652,7 @@
             "$ref": "#/definitions/gradientStop"
           },
           {
-            "$ref": "../../format.json#/definitions/tokenValueReference"
+            "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
           }
         ]
       },
@@ -1666,10 +1666,10 @@
               "description": "The color value at the stop's position on the gradient",
               "oneOf": [
                 {
-                  "$ref": "color.json"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/color.json"
                 },
                 {
-                  "$ref": "../../format.json#/definitions/tokenValueReference"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                 }
               ]
             },
@@ -1682,7 +1682,7 @@
                   "maximum": 1
                 },
                 {
-                  "$ref": "../../format.json#/definitions/tokenValueReference"
+                  "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
                 }
               ]
             }
@@ -1706,10 +1706,10 @@
           "description": "The typography's font",
           "oneOf": [
             {
-              "$ref": "fontFamily.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/fontFamily.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         },
@@ -1717,10 +1717,10 @@
           "description": "The size of the typography",
           "oneOf": [
             {
-              "$ref": "dimension.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         },
@@ -1728,10 +1728,10 @@
           "description": "The weight of the typography",
           "oneOf": [
             {
-              "$ref": "fontWeight.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/fontWeight.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         },
@@ -1739,10 +1739,10 @@
           "description": "The horizontal spacing between characters",
           "oneOf": [
             {
-              "$ref": "dimension.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/dimension.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         },
@@ -1750,10 +1750,10 @@
           "description": "The vertical spacing between lines of typography (interpreted as a multiplier of fontSize)",
           "oneOf": [
             {
-              "$ref": "number.json"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format/values/number.json"
             },
             {
-              "$ref": "../../format.json#/definitions/tokenValueReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/tokenValueReference"
             }
           ]
         }
@@ -1774,10 +1774,10 @@
       "description": "A group or a token in the DTCG specification. A token is identified by the presence of a $value property, while a group is any object without a $value property.",
       "oneOf": [
         {
-          "$ref": "group.json"
+          "$ref": "https://www.designtokens.org/schemas/2025.10/format/group.json"
         },
         {
-          "$ref": "token.json"
+          "$ref": "https://www.designtokens.org/schemas/2025.10/format/token.json"
         }
       ]
     },
@@ -1789,7 +1789,7 @@
       "type": "object",
       "properties": {
         "$type": {
-          "$ref": "tokenType.json"
+          "$ref": "https://www.designtokens.org/schemas/2025.10/format/tokenType.json"
         },
         "$description": {
           "type": "string",
@@ -1802,10 +1802,10 @@
         "$extends": {
           "oneOf": [
             {
-              "$ref": "../format.json#/definitions/curlyBraceReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/curlyBraceReference"
             },
             {
-              "$ref": "../format.json#/definitions/jsonPointerReference"
+              "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReference"
             }
           ],
           "description": "Reference to another group to inherit tokens and properties from"
@@ -1822,12 +1822,12 @@
           "description": "Whether this group is deprecated"
         },
         "$root": {
-          "$ref": "token.json"
+          "$ref": "https://www.designtokens.org/schemas/2025.10/format/token.json"
         }
       },
       "patternProperties": {
         "^[^${}.][^{}.]*$": {
-          "$ref": "groupOrToken.json"
+          "$ref": "https://www.designtokens.org/schemas/2025.10/format/groupOrToken.json"
         }
       },
       "additionalProperties": false
