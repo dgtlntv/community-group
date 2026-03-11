@@ -1182,12 +1182,12 @@
       "features": ["groups", "extends", "preprocessing-required"]
     },
     {
-      "id": "group-type-not-string",
+      "id": "metadata-type-not-string",
       "type": "NegativeEvaluationTest",
-      "name": "Group $type is not a string",
-      "purpose": "Verifies that $type must be a string value",
-      "input": "negative/group/type-not-string.json",
-      "features": ["groups"]
+      "name": "$type is not a string",
+      "purpose": "Verifies that $type must be a string value, not an array or other type",
+      "input": "negative/metadata/type-not-string.json",
+      "features": ["metadata"]
     },
     {
       "id": "metadata-deprecated-number",
@@ -1333,10 +1333,10 @@
     {
       "id": "reference-json-pointer-circular-with-ref",
       "type": "NegativeEvaluationTest",
-      "name": "Circular JSON pointer reference",
-      "purpose": "Verifies that JSON pointers cannot create circular references",
+      "name": "Circular JSON pointer self-reference",
+      "purpose": "Verifies that $ref cannot create a circular reference back to itself",
       "input": "negative/references/json-pointer-circular-with-ref.json",
-      "features": ["references", "json-pointer"]
+      "features": ["references", "json-pointer", "preprocessing-required"]
     },
     {
       "id": "reference-json-pointer-double-slash",
