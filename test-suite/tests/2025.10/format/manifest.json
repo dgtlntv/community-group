@@ -527,6 +527,14 @@
       ]
     },
     {
+      "id": "reference-color-components-ref-hsl",
+      "type": "PositiveEvaluationTest",
+      "name": "JSON Pointer to entire HSL color components array",
+      "purpose": "Verifies that JSON Pointer can reference an entire components array within an HSL color token without triggering color-space-specific component validation",
+      "input": "positive/references/color-components-ref-hsl.json",
+      "features": ["references", "json-pointer", "color", "hsl"]
+    },
+    {
       "id": "reference-chained-reference",
       "type": "PositiveEvaluationTest",
       "name": "Chained reference",
@@ -1555,6 +1563,38 @@
       "purpose": "Verifies that strokeStyle dashArray references must point to dimension arrays",
       "input": "negative/references/stroke-dashArray-ref-wrong-type.json",
       "features": ["references", "strokeStyle", "preprocessing-required"]
+    },
+    {
+      "id": "reference-dimension-curly-brace-in-subvalue",
+      "type": "NegativeEvaluationTest",
+      "name": "Dimension with curly brace reference in sub-value",
+      "purpose": "Verifies that curly brace references are not allowed in sub-values of non-composite dimension tokens",
+      "input": "negative/references/dimension-curly-brace-in-subvalue.json",
+      "features": ["references", "dimension"]
+    },
+    {
+      "id": "reference-color-curly-brace-in-subvalue",
+      "type": "NegativeEvaluationTest",
+      "name": "Color with curly brace reference in sub-value",
+      "purpose": "Verifies that curly brace references are not allowed in sub-values of non-composite color tokens",
+      "input": "negative/references/color-curly-brace-in-subvalue.json",
+      "features": ["references", "color"]
+    },
+    {
+      "id": "reference-duration-curly-brace-in-subvalue",
+      "type": "NegativeEvaluationTest",
+      "name": "Duration with curly brace reference in sub-value",
+      "purpose": "Verifies that curly brace references are not allowed in sub-values of non-composite duration tokens",
+      "input": "negative/references/duration-curly-brace-in-subvalue.json",
+      "features": ["references", "duration"]
+    },
+    {
+      "id": "reference-cubicBezier-curly-brace-in-subvalue",
+      "type": "NegativeEvaluationTest",
+      "name": "Cubic Bezier with curly brace reference in sub-value",
+      "purpose": "Verifies that curly brace references are not allowed in sub-values of non-composite cubicBezier tokens",
+      "input": "negative/references/cubicBezier-curly-brace-in-subvalue.json",
+      "features": ["references", "cubicBezier"]
     },
     {
       "id": "shadow-array-with-non-object",
