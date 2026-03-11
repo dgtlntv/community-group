@@ -166,6 +166,15 @@ export interface ValidationResult {
   errorDetails: string;
 }
 
+/** Options for customising test generation. */
+export interface GenerateTestsOptions {
+  /**
+   * Test case IDs to exclude from the generated suite.
+   * Matching tests are silently omitted rather than skipped.
+   */
+  excludeIds?: string[];
+}
+
 /**
  * Generate test suites from manifests, delegating validation to a callback.
  *
@@ -175,6 +184,7 @@ export interface ValidationResult {
  *
  * @param runTest - Validator-specific function that validates a fixture
  *   and returns whether it's valid and any error details.
+ * @param options - Optional settings for excluding tests.
  */
 export function generateTests(
   runTest: (
@@ -182,7 +192,9 @@ export function generateTests(
     fixturePath: string,
     ctx: ValidateContext,
   ) => Promise<ValidationResult> | ValidationResult,
+  options: GenerateTestsOptions = {},
 ): void {
+  const excludeIdSet = new Set(options.excludeIds ?? []);
   for (const { version, entrySchemas } of config.versions) {
     const versionDir = join(TEST_SUITE_DIR, version);
     const rootManifest = loadJson<RootManifest>(
@@ -210,7 +222,9 @@ export function generateTests(
         const schemaPath = join(DIST_DIR, version, entry.filename);
 
         const testCases = subManifest.tests.filter(
-          (t) => !t.features?.includes('preprocessing-required'),
+          (t) =>
+            !t.features?.includes('preprocessing-required') &&
+            !excludeIdSet.has(t.id),
         );
 
         const ctx: ValidateContext = { subManifest, schemaPath, manifestDir };
