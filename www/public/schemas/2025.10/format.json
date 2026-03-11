@@ -82,9 +82,7 @@
           "$ref": "#/definitions/jsonPointerReference"
         }
       },
-      "required": [
-        "$ref"
-      ],
+      "required": ["$ref"],
       "additionalProperties": false,
       "description": "Object containing a JSON Pointer reference for property-level references"
     },
@@ -163,27 +161,21 @@
         {
           "description": "Tokens cannot define both $value and $ref; they must choose exactly one form of reference or direct value.",
           "if": {
-            "required": [
-              "$value"
-            ],
+            "required": ["$value"],
             "properties": {
               "$value": true
             }
           },
           "then": {
             "not": {
-              "required": [
-                "$ref"
-              ],
+              "required": ["$ref"],
               "properties": {
                 "$ref": true
               }
             }
           },
           "else": {
-            "required": [
-              "$ref"
-            ],
+            "required": ["$ref"],
             "properties": {
               "$ref": true
             }
@@ -191,9 +183,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "color"
@@ -217,9 +207,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "dimension"
@@ -243,9 +231,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "fontFamily"
@@ -269,9 +255,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "fontWeight"
@@ -295,9 +279,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "duration"
@@ -321,9 +303,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "cubicBezier"
@@ -347,9 +327,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "number"
@@ -373,9 +351,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "strokeStyle"
@@ -399,9 +375,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "border"
@@ -425,9 +399,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "transition"
@@ -451,9 +423,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "shadow"
@@ -477,9 +447,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "gradient"
@@ -503,9 +471,7 @@
         },
         {
           "if": {
-            "required": [
-              "$type"
-            ],
+            "required": ["$type"],
             "properties": {
               "$type": {
                 "const": "typography"
@@ -532,15 +498,11 @@
             "allOf": [
               {
                 "not": {
-                  "required": [
-                    "$type"
-                  ]
+                  "required": ["$type"]
                 }
               },
               {
-                "required": [
-                  "$value"
-                ]
+                "required": ["$value"]
               },
               {
                 "properties": {
@@ -679,10 +641,7 @@
           ]
         }
       },
-      "required": [
-        "colorSpace",
-        "components"
-      ],
+      "required": ["colorSpace", "components"],
       "additionalProperties": false,
       "definitions": {
         "zeroToOneComponent": {
@@ -1179,10 +1138,7 @@
           "oneOf": [
             {
               "type": "string",
-              "enum": [
-                "px",
-                "rem"
-              ]
+              "enum": ["px", "rem"]
             },
             {
               "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
@@ -1190,10 +1146,7 @@
           ]
         }
       },
-      "required": [
-        "value",
-        "unit"
-      ],
+      "required": ["value", "unit"],
       "additionalProperties": false
     },
     "https://www.designtokens.org/schemas/2025.10/format/values/fontFamily.json": {
@@ -1290,10 +1243,7 @@
           "oneOf": [
             {
               "type": "string",
-              "enum": [
-                "ms",
-                "s"
-              ]
+              "enum": ["ms", "s"]
             },
             {
               "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
@@ -1301,10 +1251,7 @@
           ]
         }
       },
-      "required": [
-        "value",
-        "unit"
-      ],
+      "required": ["value", "unit"],
       "additionalProperties": false
     },
     "https://www.designtokens.org/schemas/2025.10/format/values/cubicBezier.json": {
@@ -1416,11 +1363,7 @@
               "oneOf": [
                 {
                   "type": "string",
-                  "enum": [
-                    "round",
-                    "butt",
-                    "square"
-                  ]
+                  "enum": ["round", "butt", "square"]
                 },
                 {
                   "$ref": "https://www.designtokens.org/schemas/2025.10/format.json#/definitions/jsonPointerReferenceObject"
@@ -1428,10 +1371,7 @@
               ]
             }
           },
-          "required": [
-            "dashArray",
-            "lineCap"
-          ],
+          "required": ["dashArray", "lineCap"],
           "additionalProperties": false
         }
       ]
@@ -1477,11 +1417,7 @@
           ]
         }
       },
-      "required": [
-        "color",
-        "width",
-        "style"
-      ],
+      "required": ["color", "width", "style"],
       "additionalProperties": false
     },
     "https://www.designtokens.org/schemas/2025.10/format/values/transition.json": {
@@ -1525,11 +1461,7 @@
           ]
         }
       },
-      "required": [
-        "duration",
-        "delay",
-        "timingFunction"
-      ],
+      "required": ["duration", "delay", "timingFunction"],
       "additionalProperties": false
     },
     "https://www.designtokens.org/schemas/2025.10/format/values/shadow.json": {
@@ -1629,13 +1561,7 @@
               ]
             }
           },
-          "required": [
-            "color",
-            "offsetX",
-            "offsetY",
-            "blur",
-            "spread"
-          ],
+          "required": ["color", "offsetX", "offsetY", "blur", "spread"],
           "additionalProperties": false
         }
       }
@@ -1687,10 +1613,7 @@
               ]
             }
           },
-          "required": [
-            "color",
-            "position"
-          ],
+          "required": ["color", "position"],
           "additionalProperties": false
         }
       }

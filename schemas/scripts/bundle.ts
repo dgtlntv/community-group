@@ -18,6 +18,7 @@ import {
 } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import * as prettier from 'prettier';
 import { registerSchema } from '@hyperjump/json-schema/draft-07';
 import { bundle } from '@hyperjump/json-schema/bundle';
 
@@ -118,7 +119,9 @@ async function bundleSchema(
     definitionNamingStrategy: 'uri',
   });
 
-  const json = JSON.stringify(bundled, null, 2) + '\n';
+  const json = await prettier.format(JSON.stringify(bundled, null, 2), {
+    parser: 'json',
+  });
 
   for (const dir of outputDirs) {
     const outputPath = join(dir, filename);
