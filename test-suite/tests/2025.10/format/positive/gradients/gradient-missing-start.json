@@ -1,19 +1,20 @@
 {
-  "$description": "Gradient without stop at position 0",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Gradient with positions not starting at 0",
   "gradient": {
     "$type": "gradient",
     "$value": [
       {
         "color": {
           "colorSpace": "srgb",
-          "components": [1, 1, 0]
+          "components": [0, 0, 0]
         },
         "position": 0.666
       },
       {
         "color": {
           "colorSpace": "srgb",
-          "components": [1, 0, 0]
+          "components": [0, 0, 0]
         },
         "position": 1
       }

@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Shadow array must contain only shadow objects or references, not strings",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Shadow array must contain only shadow objects, not strings",
   "invalid-shadow": {
     "$type": "shadow",
     "$value": [
@@ -13,11 +14,11 @@
           "unit": "px"
         },
         "offsetY": {
-          "value": 2,
+          "value": 0,
           "unit": "px"
         },
         "blur": {
-          "value": 4,
+          "value": 0,
           "unit": "px"
         },
         "spread": {

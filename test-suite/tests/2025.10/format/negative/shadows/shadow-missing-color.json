@@ -1,6 +1,6 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "INVALID: Shadow missing required 'color' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Shadow missing required color property",
   "invalid-shadow": {
     "$type": "shadow",
     "$value": {
@@ -9,11 +9,11 @@
         "unit": "px"
       },
       "offsetY": {
-        "value": 2,
+        "value": 0,
         "unit": "px"
       },
       "blur": {
-        "value": 4,
+        "value": 0,
         "unit": "px"
       },
       "spread": {

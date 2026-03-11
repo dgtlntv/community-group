@@ -1,11 +1,12 @@
 {
-  "$description": "INVALID: Object stroke style missing required 'lineCap' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Object stroke style missing required lineCap property",
   "invalid-strokeStyle": {
     "$type": "strokeStyle",
     "$value": {
       "dashArray": [
         {
-          "value": 5,
+          "value": 0,
           "unit": "px"
         }
       ]

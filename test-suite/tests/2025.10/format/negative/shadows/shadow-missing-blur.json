@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Shadow missing required 'blur' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Shadow missing required blur property",
   "invalid-shadow": {
     "$type": "shadow",
     "$value": {
@@ -12,7 +13,7 @@
         "unit": "px"
       },
       "offsetY": {
-        "value": 2,
+        "value": 0,
         "unit": "px"
       },
       "spread": {

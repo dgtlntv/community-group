@@ -1,6 +1,7 @@
 {
-  "$description": "Zero value number",
-  "value": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Zero number value",
+  "number": {
     "$type": "number",
     "$value": 0
   }

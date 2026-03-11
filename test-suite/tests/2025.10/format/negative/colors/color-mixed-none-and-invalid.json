@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Components array has wrong type - mixing 'none' with numbers improperly",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Component must be a number or 'none', not an arbitrary string",
   "invalid-color": {
     "$type": "color",
     "$value": {

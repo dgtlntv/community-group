@@ -1,11 +1,11 @@
 {
-  "$description": "LCH (Lightness, Chroma, Hue) color space",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Color in LCH color space",
   "color": {
     "$type": "color",
     "$value": {
       "colorSpace": "lch",
-      "components": [60.17, 111.4, 327.11],
-      "hex": "#ff00ff"
+      "components": [60.17, 111.4, 327.11]
     }
   }
 }

@@ -1,15 +1,16 @@
 {
-  "$description": "Custom dash array with butt line cap",
-  "stroke": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Custom dash pattern with butt lineCap",
+  "strokeStyle": {
     "$type": "strokeStyle",
     "$value": {
       "dashArray": [
         {
-          "value": 10,
+          "value": 0,
           "unit": "px"
         },
         {
-          "value": 5,
+          "value": 0,
           "unit": "px"
         }
       ],

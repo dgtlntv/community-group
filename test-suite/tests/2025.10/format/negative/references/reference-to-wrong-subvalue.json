@@ -1,7 +1,8 @@
 {
-  "$description": "INVALID: Reference using curly braces cannot target sub-properties, only complete token values",
-  "invalid-reference": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Curly brace references cannot target sub-properties",
+  "invalid-number": {
     "$type": "number",
-    "$value": "{colors.srgb-color.components.0}"
+    "$value": "{colors.color.components.0}"
   }
 }

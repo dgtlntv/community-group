@@ -1,5 +1,6 @@
 {
-  "$description": "Duration with zero milliseconds",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Duration with zero milliseconds",
   "duration": {
     "$type": "duration",
     "$value": {

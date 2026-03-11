@@ -1,15 +1,16 @@
 {
-  "$description": "Stroke style with custom dash pattern",
-  "stroke": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Custom dash pattern with round lineCap",
+  "strokeStyle": {
     "$type": "strokeStyle",
     "$value": {
       "dashArray": [
         {
-          "value": 10,
+          "value": 0,
           "unit": "px"
         },
         {
-          "value": 5,
+          "value": 0,
           "unit": "px"
         }
       ],

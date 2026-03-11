@@ -1,10 +1,11 @@
 {
-  "$description": "INVALID: Hex fallback must be string, not number",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Hex fallback must be a string, not a number",
   "invalid-color": {
     "$type": "color",
     "$value": {
       "colorSpace": "srgb",
-      "components": [1, 0, 0],
+      "components": [0, 0, 0],
       "hex": 16711680
     }
   }

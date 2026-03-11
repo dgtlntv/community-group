@@ -1,16 +1,17 @@
 {
-  "$description": "INVALID: JSON Pointer treating array index as string property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: JSON Pointer uses string property name instead of array index",
   "colors": {
-    "srgb-color": {
+    "color": {
       "$type": "color",
       "$value": {
         "colorSpace": "srgb",
-        "components": [1, 0, 0]
+        "components": [0, 0, 0]
       }
     }
   },
-  "invalid-json-pointer": {
-    "$ref": "#/colors/srgb-color/$value/components/first",
+  "invalid-number": {
+    "$ref": "#/colors/color/$value/components/first",
     "$type": "number"
   }
 }

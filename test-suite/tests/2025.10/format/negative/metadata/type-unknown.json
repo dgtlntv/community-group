@@ -1,6 +1,7 @@
 {
-  "$description": "INVALID: 'customType' is not a valid/supported token type",
-  "invalid-type": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: 'customType' is not a supported token type",
+  "invalid-color": {
     "$type": "customType",
     "$value": "some value"
   }

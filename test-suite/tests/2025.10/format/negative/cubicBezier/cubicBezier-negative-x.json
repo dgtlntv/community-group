@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: X coordinates cannot be negative",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Cubic Bezier X coordinates cannot be negative",
   "invalid-cubicBezier": {
     "$type": "cubicBezier",
     "$value": [-0.1, 0, 0.58, 1]

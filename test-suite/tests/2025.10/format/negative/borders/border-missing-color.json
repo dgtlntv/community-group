@@ -1,11 +1,11 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "INVALID: Border missing required 'color' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Border missing required color property",
   "invalid-border": {
     "$type": "border",
     "$value": {
       "width": {
-        "value": 1,
+        "value": 0,
         "unit": "px"
       },
       "style": "solid"

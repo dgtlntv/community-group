@@ -1,11 +1,12 @@
 {
-  "$description": "INVALID: Typography missing required 'lineHeight' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Typography missing required lineHeight property",
   "invalid-typography": {
     "$type": "typography",
     "$value": {
-      "fontFamily": "Arial",
+      "fontFamily": "sans-serif",
       "fontSize": {
-        "value": 16,
+        "value": 0,
         "unit": "px"
       },
       "fontWeight": 400,

@@ -1,15 +1,16 @@
 {
-  "$description": "INVALID: Typography missing required 'letterSpacing' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Typography missing required letterSpacing property",
   "invalid-typography": {
     "$type": "typography",
     "$value": {
-      "fontFamily": "Arial",
+      "fontFamily": "sans-serif",
       "fontSize": {
-        "value": 16,
+        "value": 0,
         "unit": "px"
       },
       "fontWeight": 400,
-      "lineHeight": 1.5
+      "lineHeight": 0
     }
   }
 }

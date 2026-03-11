@@ -1,19 +1,20 @@
 {
-  "$description": "Typography with rem font size",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Typography with rem font size",
   "typography": {
     "$type": "typography",
     "$value": {
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": {
         "value": 0.875,
         "unit": "rem"
       },
       "fontWeight": 400,
       "letterSpacing": {
-        "value": 0.5,
+        "value": 0,
         "unit": "px"
       },
-      "lineHeight": 1.4
+      "lineHeight": 0
     }
   }
 }

@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: dashArray cannot be empty",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: dashArray cannot be empty",
   "invalid-strokeStyle": {
     "$type": "strokeStyle",
     "$value": {

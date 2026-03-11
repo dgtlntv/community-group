@@ -1,7 +1,7 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "INVALID: Empty reference",
-  "invalid-reference": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Empty curly brace reference",
+  "invalid-color": {
     "$type": "color",
     "$value": "{}"
   }

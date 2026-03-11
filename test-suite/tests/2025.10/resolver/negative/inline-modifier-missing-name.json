@@ -1,5 +1,6 @@
 {
-  "description": "INVALID: Inline modifier missing name",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "description": "NEGATIVE: Inline modifier missing required name property",
   "version": "2025.10",
   "resolutionOrder": [
     {
@@ -8,12 +9,10 @@
         "light": [
           {
             "color": {
-              "background": {
-                "$type": "color",
-                "$value": {
-                  "colorSpace": "srgb",
-                  "components": [1, 1, 1]
-                }
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0, 0, 0]
               }
             }
           }
@@ -21,12 +20,10 @@
         "dark": [
           {
             "color": {
-              "background": {
-                "$type": "color",
-                "$value": {
-                  "colorSpace": "srgb",
-                  "components": [0, 0, 0]
-                }
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0, 0, 0]
               }
             }
           }

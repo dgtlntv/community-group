@@ -1,6 +1,6 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "INVALID: Transition missing required 'duration' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Transition missing required duration property",
   "invalid-transition": {
     "$type": "transition",
     "$value": {
@@ -8,7 +8,7 @@
         "value": 0,
         "unit": "ms"
       },
-      "timingFunction": [0.42, 0, 0.58, 1]
+      "timingFunction": [0, 0, 1, 1]
     }
   }
 }

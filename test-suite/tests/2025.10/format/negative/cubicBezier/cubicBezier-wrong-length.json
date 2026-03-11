@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Cubic Bezier must have exactly 4 values, has 3",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Cubic Bezier must have exactly 4 values",
   "invalid-cubicBezier": {
     "$type": "cubicBezier",
     "$value": [0.42, 0, 1]

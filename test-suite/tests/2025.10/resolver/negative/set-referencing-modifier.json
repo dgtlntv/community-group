@@ -1,5 +1,6 @@
 {
-  "description": "INVALID: Set referencing modifier",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "description": "NEGATIVE: Set sources cannot reference a modifier",
   "version": "2025.10",
   "sets": {
     "colors": {
@@ -12,12 +13,10 @@
         "light": [
           {
             "color": {
-              "background": {
-                "$type": "color",
-                "$value": {
-                  "colorSpace": "srgb",
-                  "components": [1, 1, 1]
-                }
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0, 0, 0]
               }
             }
           }
@@ -25,12 +24,10 @@
         "dark": [
           {
             "color": {
-              "background": {
-                "$type": "color",
-                "$value": {
-                  "colorSpace": "srgb",
-                  "components": [0, 0, 0]
-                }
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0, 0, 0]
               }
             }
           }

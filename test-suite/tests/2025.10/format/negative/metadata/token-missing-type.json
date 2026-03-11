@@ -1,9 +1,10 @@
 {
-  "$description": "INVALID: Token has no $type and not in a group with $type, making type indeterminate",
-  "missing-type": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Token has no $type and is not in a group with $type",
+  "invalid-color": {
     "$value": {
       "colorSpace": "srgb",
-      "components": [1, 0, 0]
+      "components": [0, 0, 0]
     }
   }
 }

@@ -1,6 +1,7 @@
 {
-  "$description": "Font family as array with fallbacks",
-  "font": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Font family as array with fallbacks",
+  "fontFamily": {
     "$type": "fontFamily",
     "$value": ["Arial", "Helvetica", "sans-serif"]
   }

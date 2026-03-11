@@ -1,6 +1,7 @@
 {
-  "$description": "Negative number",
-  "value": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Negative number value",
+  "number": {
     "$type": "number",
     "$value": -5
   }

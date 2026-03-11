@@ -1,6 +1,7 @@
 {
-  "$description": "Dotted stroke style as string",
-  "stroke": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Stroke style 'dotted' keyword",
+  "strokeStyle": {
     "$type": "strokeStyle",
     "$value": "dotted"
   }

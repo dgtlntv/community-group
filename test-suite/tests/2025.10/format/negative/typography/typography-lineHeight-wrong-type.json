@@ -1,11 +1,12 @@
 {
-  "$description": "INVALID: Typography lineHeight must be number, not dimension object",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Typography lineHeight must be a number, not a dimension object",
   "invalid-typography": {
     "$type": "typography",
     "$value": {
-      "fontFamily": "Arial",
+      "fontFamily": "sans-serif",
       "fontSize": {
-        "value": 16,
+        "value": 0,
         "unit": "px"
       },
       "fontWeight": 400,
@@ -14,8 +15,8 @@
         "unit": "px"
       },
       "lineHeight": {
-        "value": 1.5,
-        "unit": "em"
+        "value": 0,
+        "unit": "px"
       }
     }
   }

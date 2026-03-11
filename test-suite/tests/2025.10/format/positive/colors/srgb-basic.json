@@ -1,12 +1,11 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "Basic sRGB color token",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Basic sRGB color",
   "color": {
     "$type": "color",
     "$value": {
       "colorSpace": "srgb",
-      "components": [1, 0, 0.5],
-      "hex": "#ff0080"
+      "components": [1, 0, 0.5]
     }
   }
 }

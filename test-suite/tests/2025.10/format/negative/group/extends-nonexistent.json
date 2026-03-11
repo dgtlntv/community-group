@@ -1,12 +1,13 @@
 {
-  "$description": "INVALID: $extends references non-existent group",
-  "invalid-extends": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: $extends references a non-existent group",
+  "invalid-group": {
     "$extends": "{nonexistent.group}",
     "token": {
       "$type": "color",
       "$value": {
         "colorSpace": "srgb",
-        "components": [1, 0, 0]
+        "components": [0, 0, 0]
       }
     }
   }

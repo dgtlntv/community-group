@@ -1,9 +1,10 @@
 {
-  "$description": "INVALID: Typography fontSize sub-value is number instead of dimension object",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Typography fontSize must be a dimension object, not a plain number",
   "invalid-typography": {
     "$type": "typography",
     "$value": {
-      "fontFamily": "Arial",
+      "fontFamily": "sans-serif",
       "fontSize": 16,
       "fontWeight": 400,
       "letterSpacing": {

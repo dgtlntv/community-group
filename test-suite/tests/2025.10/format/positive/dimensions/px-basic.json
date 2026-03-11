@@ -1,7 +1,7 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "Dimension with pixel unit",
-  "spacing": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Dimension with pixel unit",
+  "dimension": {
     "$type": "dimension",
     "$value": {
       "value": 16,

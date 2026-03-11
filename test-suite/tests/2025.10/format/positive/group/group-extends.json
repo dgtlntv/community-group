@@ -1,18 +1,18 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "Group demonstrating $extends feature for inheritance",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Group using $extends to inherit tokens",
   "base-button": {
     "$type": "color",
     "background": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0.4, 0.8]
+        "components": [0, 0, 0]
       }
     },
     "text": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [1, 1, 1]
+        "components": [0, 0, 0]
       }
     }
   },
@@ -21,7 +21,7 @@
     "background": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0.8, 0, 0.4]
+        "components": [0, 0, 0]
       }
     }
   }

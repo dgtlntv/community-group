@@ -1,33 +1,32 @@
 {
-  "$description": "Composite tokens reusing sub-values from other composite tokens",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Composite tokens reusing sub-values from other composite tokens",
   "base-shadow": {
     "$type": "shadow",
     "$value": {
       "color": {
         "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.3
+        "components": [0, 0, 0]
       },
       "offsetX": {
-        "value": 2,
+        "value": 0,
         "unit": "px"
       },
       "offsetY": {
-        "value": 4,
+        "value": 0,
         "unit": "px"
       },
       "blur": {
-        "value": 8,
+        "value": 0,
         "unit": "px"
       },
       "spread": {
-        "value": 1,
+        "value": 0,
         "unit": "px"
       }
     }
   },
   "border-reusing-shadow-color": {
-    "$description": "Border that reuses the color from a shadow token",
     "$type": "border",
     "$value": {
       "color": {
@@ -40,7 +39,6 @@
     }
   },
   "dimension-from-shadow": {
-    "$description": "Standalone dimension referencing a dimension within a shadow",
     "$type": "dimension",
     "$ref": "#/base-shadow/$value/offsetY"
   }

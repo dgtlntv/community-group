@@ -1,5 +1,6 @@
 {
-  "description": "INVALID: Circular reference in sets",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "description": "NEGATIVE: Circular reference between sets",
   "version": "2025.10",
   "sets": {
     "a": {

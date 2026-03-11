@@ -1,7 +1,8 @@
 {
-  "$description": "INVALID: Reference syntax with improper spacing or formatting",
-  "invalid-reference": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Reference with improper spacing inside braces",
+  "invalid-color": {
     "$type": "color",
-    "$value": "{ colors . srgb-color }"
+    "$value": "{ colors . color }"
   }
 }

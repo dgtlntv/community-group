@@ -1,5 +1,6 @@
 {
-  "$description": "sRGB linear color space",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Color in srgb-linear color space",
   "color": {
     "$type": "color",
     "$value": {

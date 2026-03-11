@@ -1,7 +1,8 @@
 {
-  "$description": "INVALID: JSON Pointer references non-existent property in composite token",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: JSON Pointer references non-existent property in composite token",
   "shadows": {
-    "small": {
+    "shadow": {
       "$type": "shadow",
       "$value": {
         "color": {
@@ -13,11 +14,11 @@
           "unit": "px"
         },
         "offsetY": {
-          "value": 2,
+          "value": 0,
           "unit": "px"
         },
         "blur": {
-          "value": 4,
+          "value": 0,
           "unit": "px"
         },
         "spread": {
@@ -27,8 +28,8 @@
       }
     }
   },
-  "invalid-json-pointer": {
-    "$ref": "#/shadows/small/$value/radius",
+  "invalid-dimension": {
+    "$ref": "#/shadows/shadow/$value/radius",
     "$type": "dimension"
   }
 }

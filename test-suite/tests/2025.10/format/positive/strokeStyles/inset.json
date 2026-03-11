@@ -1,6 +1,7 @@
 {
-  "$description": "Inset stroke style",
-  "stroke": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Stroke style 'inset' keyword",
+  "strokeStyle": {
     "$type": "strokeStyle",
     "$value": "inset"
   }

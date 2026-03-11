@@ -1,11 +1,12 @@
 {
-  "$description": "Chained reference (reference to a reference)",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Chained reference (reference to a reference)",
   "colors": {
     "$type": "color",
     "blue": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0.4, 0.8]
+        "components": [0, 0, 0]
       }
     }
   },

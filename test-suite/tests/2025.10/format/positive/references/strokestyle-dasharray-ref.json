@@ -1,39 +1,21 @@
 {
-  "$description": "JSON Pointer reference to entire strokeStyle dashArray",
-  "strokes": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: JSON Pointer reference to entire strokeStyle dashArray",
+  "strokeStyles": {
     "$type": "strokeStyle",
-    "base-dashes": {
+    "base": {
       "$value": {
         "dashArray": [
-          { "value": 4, "unit": "px" },
-          { "value": 2, "unit": "px" }
+          { "value": 0, "unit": "px" },
+          { "value": 0, "unit": "px" }
         ],
         "lineCap": "round"
       }
     },
-    "derived-same-dashes": {
-      "$description": "References the entire dashArray from base-dashes",
+    "derived": {
       "$value": {
-        "dashArray": { "$ref": "#/strokes/base-dashes/$value/dashArray" },
+        "dashArray": { "$ref": "#/strokeStyles/base/$value/dashArray" },
         "lineCap": "butt"
-      }
-    },
-    "complex-dashes": {
-      "$value": {
-        "dashArray": [
-          { "value": 8, "unit": "px" },
-          { "value": 4, "unit": "px" },
-          { "value": 2, "unit": "px" },
-          { "value": 4, "unit": "px" }
-        ],
-        "lineCap": "square"
-      }
-    },
-    "derived-complex-dashes": {
-      "$description": "References a more complex dashArray pattern",
-      "$value": {
-        "dashArray": { "$ref": "#/strokes/complex-dashes/$value/dashArray" },
-        "lineCap": "round"
       }
     }
   }

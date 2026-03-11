@@ -1,11 +1,12 @@
 {
-  "$description": "INVALID: Token names cannot contain periods",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Token names cannot contain periods",
   "group": {
     "token.invalid": {
       "$type": "color",
       "$value": {
         "colorSpace": "srgb",
-        "components": [1, 0, 0]
+        "components": [0, 0, 0]
       }
     }
   }

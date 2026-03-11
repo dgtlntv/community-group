@@ -1,17 +1,18 @@
 {
-  "$description": "Transition with non-zero delay",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Transition with non-zero delay",
   "transition": {
     "$type": "transition",
     "$value": {
       "duration": {
-        "value": 1,
-        "unit": "s"
+        "value": 0,
+        "unit": "ms"
       },
       "delay": {
         "value": 500,
         "unit": "ms"
       },
-      "timingFunction": [0.42, 0, 0.58, 1]
+      "timingFunction": [0, 0, 1, 1]
     }
   }
 }

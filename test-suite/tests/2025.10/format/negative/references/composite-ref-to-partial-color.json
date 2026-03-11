@@ -1,30 +1,31 @@
 {
-  "$description": "INVALID: Shadow color references only components array, not complete color object",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Shadow color references only components array, not complete color object",
   "colors": {
-    "srgb-color": {
+    "color": {
       "$type": "color",
       "$value": {
         "colorSpace": "srgb",
-        "components": [1, 0, 0]
+        "components": [0, 0, 0]
       }
     }
   },
-  "invalid-composite": {
+  "invalid-shadow": {
     "$type": "shadow",
     "$value": {
       "color": {
-        "$ref": "#/colors/srgb-color/$value/components"
+        "$ref": "#/colors/color/$value/components"
       },
       "offsetX": {
         "value": 0,
         "unit": "px"
       },
       "offsetY": {
-        "value": 2,
+        "value": 0,
         "unit": "px"
       },
       "blur": {
-        "value": 4,
+        "value": 0,
         "unit": "px"
       },
       "spread": {

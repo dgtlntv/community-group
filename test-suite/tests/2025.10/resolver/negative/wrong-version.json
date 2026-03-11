@@ -1,5 +1,6 @@
 {
-  "description": "INVALID: Wrong version",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "description": "NEGATIVE: Version value is not the expected version",
   "version": "2024.01",
   "resolutionOrder": [
     {
@@ -8,12 +9,10 @@
       "sources": [
         {
           "color": {
-            "primary": {
-              "$type": "color",
-              "$value": {
-                "colorSpace": "srgb",
-                "components": [1, 0, 0]
-              }
+            "$type": "color",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [0, 0, 0]
             }
           }
         }

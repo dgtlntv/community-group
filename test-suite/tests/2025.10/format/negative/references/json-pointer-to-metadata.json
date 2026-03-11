@@ -1,16 +1,17 @@
 {
-  "$description": "INVALID: JSON Pointer references $type metadata instead of value",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: JSON Pointer references $type metadata instead of $value",
   "colors": {
-    "srgb-color": {
+    "color": {
       "$type": "color",
       "$value": {
         "colorSpace": "srgb",
-        "components": [1, 0, 0]
+        "components": [0, 0, 0]
       }
     }
   },
-  "invalid-json-pointer": {
-    "$ref": "#/colors/srgb-color/$type",
+  "invalid-color": {
+    "$ref": "#/colors/color/$type",
     "$type": "color"
   }
 }

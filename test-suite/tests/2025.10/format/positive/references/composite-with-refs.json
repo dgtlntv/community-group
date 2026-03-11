@@ -1,20 +1,20 @@
 {
-  "$description": "Composite token with references to other tokens",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Composite token properties referencing other tokens",
   "colors": {
     "$type": "color",
     "black": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.2
+        "components": [0, 0, 0]
       }
     }
   },
-  "spacing": {
+  "dimensions": {
     "$type": "dimension",
     "small": {
       "$value": {
-        "value": 4,
+        "value": 0,
         "unit": "px"
       }
     }
@@ -24,10 +24,10 @@
     "default": {
       "$value": {
         "color": "{colors.black}",
-        "offsetX": "{spacing.small}",
-        "offsetY": "{spacing.small}",
+        "offsetX": "{dimensions.small}",
+        "offsetY": "{dimensions.small}",
         "blur": {
-          "value": 8,
+          "value": 0,
           "unit": "px"
         },
         "spread": {

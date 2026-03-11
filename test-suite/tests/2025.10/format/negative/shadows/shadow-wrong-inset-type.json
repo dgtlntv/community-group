@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Shadow inset property must be boolean, not string",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Shadow inset property must be a boolean, not a string",
   "invalid-shadow": {
     "$type": "shadow",
     "$value": {
@@ -12,11 +13,11 @@
         "unit": "px"
       },
       "offsetY": {
-        "value": 2,
+        "value": 0,
         "unit": "px"
       },
       "blur": {
-        "value": 4,
+        "value": 0,
         "unit": "px"
       },
       "spread": {

@@ -1,6 +1,6 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "INVALID: Border missing required 'width' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Border missing required width property",
   "invalid-border": {
     "$type": "border",
     "$value": {

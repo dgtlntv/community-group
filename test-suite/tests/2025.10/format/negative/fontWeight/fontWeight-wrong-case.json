@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Font weight strings are case-sensitive, 'BOLD' should be 'bold'",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Font weight keywords are case-sensitive, 'BOLD' is not valid",
   "invalid-fontWeight": {
     "$type": "fontWeight",
     "$value": "BOLD"

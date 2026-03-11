@@ -1,6 +1,6 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "INVALID: Color value missing required components array",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Color value missing required components array",
   "invalid-color": {
     "$type": "color",
     "$value": {

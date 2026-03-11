@@ -1,10 +1,11 @@
 {
-  "$description": "INVALID: sRGB component values must be [0-1], value 2 exceeds range",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: sRGB component values must be in range [0, 1], value 2 exceeds maximum",
   "invalid-color": {
     "$type": "color",
     "$value": {
       "colorSpace": "srgb",
-      "components": [1, 0, 2]
+      "components": [0, 0, 2]
     }
   }
 }

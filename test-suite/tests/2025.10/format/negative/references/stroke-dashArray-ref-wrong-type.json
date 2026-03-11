@@ -1,17 +1,18 @@
 {
-  "$description": "INVALID: StrokeStyle dashArray element references number instead of dimension",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: StrokeStyle dashArray element references a number instead of a dimension",
   "numbers": {
-    "line-height-normal": {
+    "number": {
       "$type": "number",
       "$value": 1.5
     }
   },
-  "invalid-stroke": {
+  "invalid-strokeStyle": {
     "$type": "strokeStyle",
     "$value": {
       "dashArray": [
         {
-          "$ref": "#/numbers/line-height-normal/$value"
+          "$ref": "#/numbers/number/$value"
         }
       ],
       "lineCap": "round"

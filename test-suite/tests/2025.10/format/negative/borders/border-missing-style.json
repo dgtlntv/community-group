@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Border missing required 'style' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Border missing required style property",
   "invalid-border": {
     "$type": "border",
     "$value": {
@@ -8,7 +9,7 @@
         "components": [0, 0, 0]
       },
       "width": {
-        "value": 1,
+        "value": 0,
         "unit": "px"
       }
     }

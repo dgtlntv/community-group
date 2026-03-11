@@ -1,17 +1,17 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "INVALID: Token references a dimension but declares type as color",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Token references a dimension but declares type as color",
   "dimensions": {
-    "spacing-small": {
+    "dimension": {
       "$type": "dimension",
       "$value": {
-        "value": 8,
+        "value": 0,
         "unit": "px"
       }
     }
   },
-  "invalid-reference": {
+  "invalid-color": {
     "$type": "color",
-    "$value": "{dimensions.spacing-small}"
+    "$value": "{dimensions.dimension}"
   }
 }

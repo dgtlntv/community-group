@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Duration missing required 'unit' property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Duration missing required unit property",
   "invalid-duration": {
     "$type": "duration",
     "$value": {

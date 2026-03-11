@@ -1,6 +1,7 @@
 {
-  "$description": "INVALID: Reference to non-existent token",
-  "invalid-reference": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Reference to non-existent token",
+  "invalid-color": {
     "$type": "color",
     "$value": "{nonexistent.token}"
   }

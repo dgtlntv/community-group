@@ -1,6 +1,7 @@
 {
-  "$description": "Stroke style as string value",
-  "stroke": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Stroke style 'solid' keyword",
+  "strokeStyle": {
     "$type": "strokeStyle",
     "$value": "solid"
   }

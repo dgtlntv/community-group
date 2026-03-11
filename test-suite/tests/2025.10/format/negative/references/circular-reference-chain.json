@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Part of circular reference chain 1->2->3->1",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Circular reference chain between tokens",
   "circular-reference-chain-1": {
     "$type": "dimension",
     "$value": "{circular-reference-chain-2}"

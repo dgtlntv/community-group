@@ -1,5 +1,6 @@
 {
-  "$description": "Dimension with fractional value",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Dimension with fractional value",
   "dimension": {
     "$type": "dimension",
     "$value": {

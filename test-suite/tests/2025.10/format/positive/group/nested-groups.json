@@ -1,15 +1,15 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "Deeply nested groups with type inheritance",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Deeply nested groups with type inheritance",
   "colors": {
     "$type": "color",
     "nested": {
       "deep": {
         "veryDeep": {
-          "primary": {
+          "color": {
             "$value": {
               "colorSpace": "srgb",
-              "components": [0, 0.5, 1]
+              "components": [0, 0, 0]
             }
           }
         }

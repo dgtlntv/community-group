@@ -1,10 +1,10 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "INVALID: Color value missing required colorSpace property",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Color value missing required colorSpace property",
   "invalid-color": {
     "$type": "color",
     "$value": {
-      "components": [1, 0, 0]
+      "components": [0, 0, 0]
     }
   }
 }

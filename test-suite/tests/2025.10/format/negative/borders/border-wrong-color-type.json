@@ -1,11 +1,12 @@
 {
-  "$description": "INVALID: Border color must be a color value, not a string",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Border color must be a color value, not a string",
   "invalid-border": {
     "$type": "border",
     "$value": {
       "color": "#ff0000",
       "width": {
-        "value": 1,
+        "value": 0,
         "unit": "px"
       },
       "style": "solid"

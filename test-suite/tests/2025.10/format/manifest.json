@@ -912,7 +912,7 @@
       "type": "NegativeEvaluationTest",
       "name": "HSL color with hue equal to 360",
       "purpose": "Verifies that HSL hue must be in range [0, 360), not including 360",
-      "input": "negative/colors/hsl-hue-equals-360.json",
+      "input": "negative/colors/color-hsl-hue-equals-360.json",
       "features": ["color", "hsl"]
     },
     {
@@ -920,7 +920,7 @@
       "type": "NegativeEvaluationTest",
       "name": "HSL color with negative lightness",
       "purpose": "Verifies that HSL lightness cannot be negative",
-      "input": "negative/colors/hsl-negative-lightness.json",
+      "input": "negative/colors/color-hsl-negative-lightness.json",
       "features": ["color", "hsl"]
     },
     {
@@ -928,7 +928,7 @@
       "type": "NegativeEvaluationTest",
       "name": "HSL color with saturation over 100",
       "purpose": "Verifies that HSL saturation must be in range [0, 100]",
-      "input": "negative/colors/hsl-saturation-over-100.json",
+      "input": "negative/colors/color-hsl-saturation-over-100.json",
       "features": ["color", "hsl"]
     },
     {
@@ -936,7 +936,7 @@
       "type": "NegativeEvaluationTest",
       "name": "LAB color with lightness over 100",
       "purpose": "Verifies that LAB lightness must be in range [0, 100]",
-      "input": "negative/colors/lab-lightness-over-100.json",
+      "input": "negative/colors/color-lab-lightness-over-100.json",
       "features": ["color", "lab"]
     },
     {
@@ -944,7 +944,7 @@
       "type": "NegativeEvaluationTest",
       "name": "LCH color with negative chroma",
       "purpose": "Verifies that LCH chroma cannot be negative",
-      "input": "negative/colors/lch-negative-chroma.json",
+      "input": "negative/colors/color-lch-negative-chroma.json",
       "features": ["color", "lch"]
     },
     {
@@ -952,7 +952,7 @@
       "type": "NegativeEvaluationTest",
       "name": "OKLAB color with lightness over 1",
       "purpose": "Verifies that OKLAB lightness must be in range [0, 1]",
-      "input": "negative/colors/oklab-lightness-over-1.json",
+      "input": "negative/colors/color-oklab-lightness-over-1.json",
       "features": ["color", "oklab"]
     },
     {
@@ -960,7 +960,7 @@
       "type": "NegativeEvaluationTest",
       "name": "OKLCH color with hue equal to 360",
       "purpose": "Verifies that OKLCH hue must be in range [0, 360), not including 360",
-      "input": "negative/colors/oklch-hue-equals-360.json",
+      "input": "negative/colors/color-oklch-hue-equals-360.json",
       "features": ["color", "oklch"]
     },
     {

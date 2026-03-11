@@ -1,6 +1,7 @@
 {
-  "$description": "Font family as single string",
-  "font": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Font family as single string",
+  "fontFamily": {
     "$type": "fontFamily",
     "$value": "Helvetica Neue"
   }

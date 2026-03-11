@@ -136,5 +136,8 @@ Use `preprocessing-required` for tests that need reference resolution, type inhe
 
 ## Adding test cases
 
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full fixture style guide. In short:
+
 1. Add `.json` fixture files to the appropriate `tests/<version>/<schema>/positive/` or `tests/<version>/<schema>/negative/` directory.
-2. Add a corresponding entry in the relevant `manifest.json`.
+2. Follow the naming, structure, and description conventions in the contributing guide.
+3. Add a corresponding entry in the relevant `manifest.json`.

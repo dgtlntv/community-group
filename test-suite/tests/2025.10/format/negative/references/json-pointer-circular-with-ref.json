@@ -1,11 +1,12 @@
 {
-  "$description": "INVALID: Circular reference using $ref pointing back to itself",
-  "invalid-json-pointer": {
-    "$ref": "#/invalid-json-pointer/$value",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: $ref creates a circular reference back to itself",
+  "invalid-color": {
+    "$ref": "#/invalid-color/$value",
     "$type": "color",
     "$value": {
       "colorSpace": "srgb",
-      "components": [1, 0, 0]
+      "components": [0, 0, 0]
     }
   }
 }

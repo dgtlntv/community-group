@@ -1,15 +1,15 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "Basic border composite token",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Basic border with color, width, and style",
   "border": {
     "$type": "border",
     "$value": {
       "color": {
         "colorSpace": "srgb",
-        "components": [0.8, 0.8, 0.8]
+        "components": [0, 0, 0]
       },
       "width": {
-        "value": 1,
+        "value": 0,
         "unit": "px"
       },
       "style": "solid"

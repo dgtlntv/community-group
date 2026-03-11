@@ -1,5 +1,6 @@
 {
-  "$description": "Edge cases: very large and very small dimension values",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Very large and very small dimension values",
   "dimensions": {
     "large": {
       "$type": "dimension",

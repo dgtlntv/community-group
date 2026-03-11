@@ -1,11 +1,12 @@
 {
-  "$description": "INVALID: Border color sub-value has wrong type (string instead of color object)",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Border color sub-value has wrong type (string instead of color object)",
   "invalid-border": {
     "$type": "border",
     "$value": {
       "color": "red",
       "width": {
-        "value": 1,
+        "value": 0,
         "unit": "px"
       },
       "style": "solid"

@@ -1,6 +1,6 @@
 {
-  "$schema": "../../../../../schemas/format/format.json",
-  "$description": "INVALID: Font weight must be [1-1000], value 0 is below range",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Font weight must be in range [1, 1000], value 0 is below minimum",
   "invalid-fontWeight": {
     "$type": "fontWeight",
     "$value": 0

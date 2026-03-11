@@ -1,5 +1,6 @@
 {
-  "$description": "INVALID: Dimension value must be a number, not a string",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Dimension value must be a number, not a string",
   "invalid-dimension": {
     "$type": "dimension",
     "$value": {

@@ -1,6 +1,7 @@
 {
-  "$description": "Dimension with zero value",
-  "spacing": {
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Dimension with zero value",
+  "dimension": {
     "$type": "dimension",
     "$value": {
       "value": 0,

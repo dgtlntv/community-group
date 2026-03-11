@@ -1,10 +1,9 @@
 {
-  "description": "INVALID: Set missing sources",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "description": "NEGATIVE: Set missing required sources property",
   "version": "2025.10",
   "sets": {
-    "colors": {
-      "description": "Missing sources property"
-    }
+    "colors": {}
   },
   "resolutionOrder": [{ "$ref": "#/sets/colors" }]
 }

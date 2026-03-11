@@ -1,14 +1,15 @@
 {
-  "$description": "Border with dashed style",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "POSITIVE: Border with dashed stroke style keyword",
   "border": {
     "$type": "border",
     "$value": {
       "color": {
         "colorSpace": "srgb",
-        "components": [0, 0.4, 0.8]
+        "components": [0, 0, 0]
       },
       "width": {
-        "value": 2,
+        "value": 0,
         "unit": "px"
       },
       "style": "dashed"

@@ -1,21 +1,19 @@
 {
-  "description": "Resolver with inline modifier",
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "description": "POSITIVE: Inline modifier definition in resolutionOrder",
   "version": "2025.10",
   "resolutionOrder": [
     {
       "type": "modifier",
       "name": "theme",
-      "description": "Color theme",
       "contexts": {
         "light": [
           {
             "color": {
-              "background": {
-                "$type": "color",
-                "$value": {
-                  "colorSpace": "srgb",
-                  "components": [1, 1, 1]
-                }
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0, 0, 0]
               }
             }
           }
@@ -23,18 +21,15 @@
         "dark": [
           {
             "color": {
-              "background": {
-                "$type": "color",
-                "$value": {
-                  "colorSpace": "srgb",
-                  "components": [0.1, 0.1, 0.1]
-                }
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [0, 0, 0]
               }
             }
           }
         ]
-      },
-      "default": "light"
+      }
     }
   ]
 }
