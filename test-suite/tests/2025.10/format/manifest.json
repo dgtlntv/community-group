@@ -506,7 +506,12 @@
       "name": "JSON Pointer to entire color components array",
       "purpose": "Verifies that JSON Pointer can reference an entire components array within a color token value",
       "input": "positive/references/color-components-array-ref.json",
-      "features": ["references", "json-pointer", "color"]
+      "features": [
+        "references",
+        "json-pointer",
+        "color",
+        "preprocessing-required"
+      ]
     },
     {
       "id": "reference-strokestyle-dasharray-ref",
@@ -514,7 +519,12 @@
       "name": "JSON Pointer to entire strokeStyle dashArray",
       "purpose": "Verifies that JSON Pointer can reference an entire dashArray within a strokeStyle token value",
       "input": "positive/references/strokestyle-dasharray-ref.json",
-      "features": ["references", "json-pointer", "strokeStyle"]
+      "features": [
+        "references",
+        "json-pointer",
+        "strokeStyle",
+        "preprocessing-required"
+      ]
     },
     {
       "id": "reference-chained-reference",
@@ -809,7 +819,7 @@
       "name": "Color with alpha out of valid range",
       "purpose": "Verifies that alpha values must be between 0 and 1 inclusive",
       "input": "negative/colors/color-alpha-out-of-range.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-component-out-of-range",
@@ -817,7 +827,7 @@
       "name": "Color with component out of valid range",
       "purpose": "Verifies that color components must be within their valid ranges for the color space",
       "input": "negative/colors/color-component-out-of-range.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-components-not-array",
@@ -825,7 +835,7 @@
       "name": "Color with components as non-array",
       "purpose": "Verifies that color components must be an array, not another type",
       "input": "negative/colors/color-components-not-array.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-hex-not-string",
@@ -833,7 +843,7 @@
       "name": "Color with hex as non-string",
       "purpose": "Verifies that the optional hex property must be a string value",
       "input": "negative/colors/color-hex-not-string.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-hex-with-alpha",
@@ -841,7 +851,7 @@
       "name": "Color hex includes alpha channel",
       "purpose": "Verifies that hex values should not include alpha channel (use alpha property instead)",
       "input": "negative/colors/color-hex-with-alpha.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-hex-wrong-format",
@@ -849,7 +859,7 @@
       "name": "Color with malformed hex value",
       "purpose": "Verifies that hex values must follow the correct format (#RRGGBB)",
       "input": "negative/colors/color-hex-wrong-format.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-missing-colorSpace",
@@ -865,7 +875,7 @@
       "name": "Color missing components array",
       "purpose": "Verifies that color tokens must include the components array",
       "input": "negative/colors/color-missing-components.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-mixed-none-and-invalid",
@@ -873,7 +883,7 @@
       "name": "Color with 'none' and invalid value",
       "purpose": "Verifies that mixing 'none' keyword with invalid values is not allowed",
       "input": "negative/colors/color-mixed-none-and-invalid.json",
-      "features": ["color"]
+      "features": ["color", "hsl"]
     },
     {
       "id": "color-negative-alpha",
@@ -881,7 +891,7 @@
       "name": "Color with negative alpha value",
       "purpose": "Verifies that alpha values cannot be negative",
       "input": "negative/colors/color-negative-alpha.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-negative-component",
@@ -889,7 +899,7 @@
       "name": "Color with negative component value",
       "purpose": "Verifies that color components cannot be negative when not allowed by color space",
       "input": "negative/colors/color-negative-component.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-unknown-colorSpace",
@@ -905,7 +915,7 @@
       "name": "Color with wrong number of components",
       "purpose": "Verifies that colors must have exactly 3 components for the color space",
       "input": "negative/colors/color-wrong-component-count.json",
-      "features": ["color"]
+      "features": ["color", "srgb"]
     },
     {
       "id": "color-hsl-hue-equals-360",
@@ -1265,7 +1275,12 @@
       "name": "Composite with JSON pointer missing required property",
       "purpose": "Verifies that JSON pointer references in composites must point to complete required values",
       "input": "negative/references/composite-json-pointer-missing-required.json",
-      "features": ["references", "composite", "json-pointer"]
+      "features": [
+        "references",
+        "composite",
+        "json-pointer",
+        "preprocessing-required"
+      ]
     },
     {
       "id": "reference-composite-ref-to-number-for-dimension",
@@ -1507,7 +1522,7 @@
       "name": "Reference to wrong composite subvalue",
       "purpose": "Verifies that references to composite subvalues must point to valid properties",
       "input": "negative/references/reference-to-wrong-subvalue.json",
-      "features": ["references", "composite", "preprocessing-required"]
+      "features": ["references", "preprocessing-required"]
     },
     {
       "id": "reference-type-mismatch",

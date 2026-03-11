@@ -66,6 +66,7 @@ Each sub-manifest contains individual test cases:
 ```json
 {
   "name": "Format Specification Tests",
+  "description": "Validation tests for DTCG token format",
   "version": "2025.10",
   "schemaId": "https://www.designtokens.org/schemas/2025.10/format.json",
   "tests": [
@@ -132,7 +133,9 @@ Use `preprocessing-required` for tests that need reference resolution, type inhe
 `sets`, `modifiers`, `resolution-order`, `metadata`
 
 **Allowed features:**
-`sets`, `modifiers`, `resolution-order`, `metadata`, `contexts`, `inline`, `reference`
+`sets`, `modifiers`, `resolution-order`, `metadata`, `contexts`, `inline`, `reference`, `preprocessing-required`
+
+Use `preprocessing-required` for resolver tests that need circular-reference detection, duplicate-name checking, or other processing beyond static schema validation.
 
 ## Adding test cases
 
