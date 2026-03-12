@@ -19,7 +19,7 @@ import {
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as prettier from 'prettier';
-import { registerSchema } from '@hyperjump/json-schema/draft-07';
+import { registerSchema, type SchemaObject } from '@hyperjump/json-schema/draft-07';
 import { bundle } from '@hyperjump/json-schema/bundle';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -49,12 +49,6 @@ interface SchemasConfig {
   sourceDir: string;
   /** Output directories relative to the package root. Each gets a `<version>/` subdirectory. */
   outputDirs: string[];
-}
-
-/** A parsed JSON Schema with an optional `$id`. */
-interface JsonSchema {
-  $id?: string;
-  [key: string]: unknown;
 }
 
 const config: SchemasConfig = JSON.parse(
@@ -90,8 +84,8 @@ function findJsonFiles(dir: string): string[] {
 function registerAllSchemas(sourceDir: string): number {
   const files = findJsonFiles(sourceDir);
   for (const file of files) {
-    const schema: JsonSchema = JSON.parse(readFileSync(file, 'utf-8'));
-    if (schema.$id) {
+    const schema: SchemaObject = JSON.parse(readFileSync(file, 'utf-8'));
+    if (typeof schema.$id === 'string') {
       registerSchema(schema, schema.$id);
       console.log(`  Registered: ${schema.$id}`);
     }

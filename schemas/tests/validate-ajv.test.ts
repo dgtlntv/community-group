@@ -7,8 +7,10 @@
  * Requires `pnpm run build` to have been run first so that
  * `dist/` contains the bundled schemas.
  */
-import Ajv, { type ErrorObject } from 'ajv';
-import addFormats from 'ajv-formats';
+import { Ajv, type ErrorObject, type AnySchema } from 'ajv';
+import AjvFormats from 'ajv-formats';
+
+const addFormats = AjvFormats.default;
 import {
   generateTests,
   loadJson,
@@ -29,7 +31,7 @@ function getValidator(schemaPath: string): Ajv {
   if (!ajv) {
     ajv = new Ajv({ strict: true, allErrors: true });
     addFormats(ajv);
-    const schema = loadJson(schemaPath, `bundled schema ${schemaPath}`);
+    const schema = loadJson<AnySchema>(schemaPath, `bundled schema ${schemaPath}`);
     ajv.addSchema(schema);
     validators.set(schemaPath, ajv);
   }
