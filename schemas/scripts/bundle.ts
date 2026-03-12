@@ -19,7 +19,10 @@ import {
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as prettier from 'prettier';
-import { registerSchema, type SchemaObject } from '@hyperjump/json-schema/draft-07';
+import {
+  registerSchema,
+  type SchemaObject,
+} from '@hyperjump/json-schema/draft-07';
 import { bundle } from '@hyperjump/json-schema/bundle';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));

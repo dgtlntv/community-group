@@ -31,7 +31,10 @@ function getValidator(schemaPath: string): Ajv {
   if (!ajv) {
     ajv = new Ajv({ strict: true, allErrors: true });
     addFormats(ajv);
-    const schema = loadJson<AnySchema>(schemaPath, `bundled schema ${schemaPath}`);
+    const schema = loadJson<AnySchema>(
+      schemaPath,
+      `bundled schema ${schemaPath}`,
+    );
     ajv.addSchema(schema);
     validators.set(schemaPath, ajv);
   }
