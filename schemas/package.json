@@ -17,10 +17,11 @@
   },
   "devDependencies": {
     "@hyperjump/json-schema": "^1.14.3",
+    "@types/node": "^25.4.0",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "tsx": "^4.19.4",
-    "vscode-json-languageservice": "^5.7.2",
-    "vitest": "^4.0.15"
+    "vitest": "^4.0.15",
+    "vscode-json-languageservice": "^5.7.2"
   }
 }
