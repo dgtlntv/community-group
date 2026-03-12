@@ -16,8 +16,10 @@ import {
   type ParseError,
   printParseErrorCode,
 } from 'jsonc-parser';
-import Ajv, { type ErrorObject } from 'ajv';
-import addFormats from 'ajv-formats';
+import { Ajv, type ErrorObject } from 'ajv';
+import AjvFormats from 'ajv-formats';
+
+const addFormats = AjvFormats.default;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const CONFIG_DIR = __dirname;

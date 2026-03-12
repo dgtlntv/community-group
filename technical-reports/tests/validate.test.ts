@@ -16,7 +16,6 @@
  * See `tests.config.json` for configuration and exclusions.
  */
 import { describe, it, expect } from 'vitest';
-import type { ErrorObject } from 'ajv';
 import {
   loadConfig,
   extractExamples,
@@ -131,7 +130,7 @@ for (const [file, blocks] of byFile) {
                 `Schema validation failed.\n\n` +
                   `Schema: ${resolved.schemaId}\n` +
                   `Detection: ${source}\n\n` +
-                  `Errors:\n${formatAjvErrors(validate.errors as ErrorObject[])}`,
+                  `Errors:\n${formatAjvErrors(validate.errors)}`,
               ),
             );
           }
