@@ -73,12 +73,16 @@ for (const [file, blocks] of byFile) {
 
       const label = formatLabel(block);
 
+      // Parse once per block, reuse across all tiers
+      const parseErrors: ParseError[] = [];
+      const parsed = parseJsonc(block.raw, parseErrors, {
+        allowTrailingComma: false,
+      });
+
       // Tier 1: Parseable as JSONC
       it(`${label} — parses as valid JSONC`, () => {
-        const errors: ParseError[] = [];
-        parseJsonc(block.raw, errors, { allowTrailingComma: true });
-        if (errors.length > 0) {
-          const errorDetails = errors
+        if (parseErrors.length > 0) {
+          const errorDetails = parseErrors
             .map(
               (e) =>
                 `  Offset ${e.offset}: ${printParseErrorCode(e.error)} (length: ${e.length})`,
@@ -111,12 +115,8 @@ for (const [file, blocks] of byFile) {
           : `detected signals (${block.detectedType})`;
 
         it(`${label} — validates against schema (${source})`, () => {
-          // Parse the block (skip if Tier 1 would already fail)
-          const errors: ParseError[] = [];
-          const parsed = parseJsonc(block.raw, errors, {
-            allowTrailingComma: true,
-          });
-          if (errors.length > 0) return;
+          // Skip if Tier 1 would already fail
+          if (parseErrors.length > 0) return;
 
           const validate = getSchemaValidator(
             resolved.schemaPath,

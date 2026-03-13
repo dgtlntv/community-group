@@ -245,7 +245,7 @@ function detectJsoncFeatures(raw: string): boolean {
     return false;
   } catch {
     const errors: ParseError[] = [];
-    parseJsonc(raw, errors, { allowTrailingComma: true });
+    parseJsonc(raw, errors, { allowTrailingComma: false });
     // Parseable as JSONC but not as strict JSON → has JSONC features
     return errors.length === 0;
   }
