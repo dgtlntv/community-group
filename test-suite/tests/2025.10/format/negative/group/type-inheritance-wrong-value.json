@@ -1,0 +1,10 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "NEGATIVE: Inherited stroke style type has a font family value",
+  "invalid-strokeStyle": {
+    "$type": "strokeStyle",
+    "strokeStyle": {
+      "$value": "Comic Sans"
+    }
+  }
+}

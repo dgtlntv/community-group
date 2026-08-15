@@ -1,10 +1,16 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://www.designtokens.org/schemas/2025.10/format/group.json",
-  "title": "Untyped Group",
-  "description": "A group that does not establish its own type scope",
+  "$id": "https://www.designtokens.org/schemas/2025.10/format/rootGroup.json",
+  "title": "Untyped root group",
+  "description": "The root of a token file when it does not establish a type scope.",
   "type": "object",
   "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri-reference",
+      "description": "URI reference to this JSON schema.",
+      "$comment": "$schema is not part of the official DTCG specification."
+    },
     "$description": {
       "type": "string",
       "description": "A plain text description of the group"
@@ -25,14 +31,7 @@
       "description": "Reference to another group to inherit tokens and properties from"
     },
     "$deprecated": {
-      "oneOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "string"
-        }
-      ],
+      "oneOf": [{ "type": "boolean" }, { "type": "string" }],
       "description": "Whether this group is deprecated"
     },
     "$root": {
@@ -42,7 +41,7 @@
   },
   "patternProperties": {
     "^[^${}.][^{}.]*$": {
-      "description": "Nested groups and tokens (see ../format.json#/definitions/tokenOrGroupName for pattern definition)",
+      "description": "Nested groups and tokens",
       "$ref": "https://www.designtokens.org/schemas/2025.10/format/groupOrToken.json"
     }
   },

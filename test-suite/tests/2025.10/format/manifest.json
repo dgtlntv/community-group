@@ -402,7 +402,15 @@
       "name": "Type inheritance from parent group",
       "purpose": "Verifies that tokens inherit $type from their parent group",
       "input": "positive/group/type-inheritance.json",
-      "features": ["groups", "type-inheritance", "preprocessing-required"]
+      "features": ["groups", "type-inheritance"]
+    },
+    {
+      "id": "group-type-inheritance-stroke-style",
+      "type": "PositiveEvaluationTest",
+      "name": "Inherited stroke style string",
+      "purpose": "Verifies that a stroke style string is validated using its inherited type",
+      "input": "positive/group/type-inheritance-stroke-style.json",
+      "features": ["groups", "type-inheritance", "strokeStyle"]
     },
     {
       "id": "group-extends",
@@ -1156,6 +1164,14 @@
       "purpose": "Verifies that an object cannot have both $value (token) and child properties (group)",
       "input": "negative/group/both-value-and-children.json",
       "features": ["groups"]
+    },
+    {
+      "id": "group-type-inheritance-wrong-value",
+      "type": "NegativeEvaluationTest",
+      "name": "Value does not match inherited type",
+      "purpose": "Verifies that a token value must match its inherited group type",
+      "input": "negative/group/type-inheritance-wrong-value.json",
+      "features": ["groups", "type-inheritance", "strokeStyle"]
     },
     {
       "id": "group-circular-extends",

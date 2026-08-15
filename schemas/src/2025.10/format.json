@@ -4,59 +4,16 @@
   "title": "DTCG Format Schema",
   "description": "JSON Schema for the Design Tokens Community Group (DTCG) Format specification.",
   "type": "object",
-  "properties": {
-    "$schema": {
-      "type": "string",
-      "format": "uri-reference",
-      "description": "URI reference to this JSON schema.",
-      "$comment": "$schema is not part of the official DTCG specification."
-    },
-    "$type": {
-      "$ref": "https://www.designtokens.org/schemas/2025.10/format/tokenType.json",
-      "description": "The type for tokens in this group (inherited by nested tokens unless overridden)"
-    },
-    "$description": {
-      "type": "string",
-      "description": "A plain text description of the group"
-    },
-    "$extensions": {
-      "type": "object",
-      "description": "Vendor-specific extensions"
-    },
-    "$extends": {
-      "oneOf": [
-        {
-          "$ref": "#/definitions/curlyBraceReference"
-        },
-        {
-          "$ref": "#/definitions/jsonPointerReference"
-        }
-      ],
-      "description": "Reference to another group to inherit tokens and properties from"
-    },
-    "$deprecated": {
-      "oneOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "string"
-        }
-      ],
-      "description": "Whether this group is deprecated"
-    },
-    "$root": {
-      "description": "Root token for this group. The $root token provides a base value for the group while allowing for variants or extensions.",
-      "$ref": "https://www.designtokens.org/schemas/2025.10/format/token.json"
-    }
+  "if": {
+    "properties": { "$type": true },
+    "required": ["$type"]
   },
-  "patternProperties": {
-    "^[^${}.][^{}.]*$": {
-      "description": "Nested groups and tokens (see #/definitions/tokenOrGroupName for pattern definition)",
-      "$ref": "https://www.designtokens.org/schemas/2025.10/format/groupOrToken.json"
-    }
+  "then": {
+    "$ref": "https://www.designtokens.org/schemas/2025.10/format/typedScopes.json#/definitions/explicitRootGroup"
   },
-  "additionalProperties": false,
+  "else": {
+    "$ref": "https://www.designtokens.org/schemas/2025.10/format/rootGroup.json"
+  },
   "definitions": {
     "tokenOrGroupName": {
       "title": "Token or Group Name",

@@ -7,7 +7,7 @@ Source JSON Schemas for the DTCG Format and Resolver specifications. Split into 
 ```
 src/              Source schemas (split files with $ref)
 dist/             Bundled output (generated, gitignored)
-scripts/          Build tooling
+scripts/          Schema generation and bundling tooling
 schemas.config.json  Bundle configuration
 ```
 
@@ -17,7 +17,9 @@ schemas.config.json  Bundle configuration
 pnpm --filter @dtcg/schemas run build
 ```
 
-This registers all source schemas, bundles each entry schema into a single file, and writes the output to both `dist/` and `../www/public/schemas/`.
+This first generates the recursive per-type scope schema at `src/2025.10/format/typedScopes.json`, then registers all source schemas, bundles each entry schema into a single file, and writes the output to both `dist/` and `../www/public/schemas/`.
+
+`typedScopes.json` is generated from `format/tokenType.json`. Edit `scripts/generate-typed-scopes.ts` rather than modifying the generated schema directly.
 
 ## Configuration
 

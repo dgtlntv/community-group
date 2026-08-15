@@ -2,13 +2,33 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://www.designtokens.org/schemas/2025.10/format/groupOrToken.json",
   "title": "Group or Token",
-  "description": "A group or a token in the DTCG specification. A token is identified by the presence of a $value property, while a group is any object without a $value property.",
-  "oneOf": [
-    {
-      "$ref": "https://www.designtokens.org/schemas/2025.10/format/group.json"
+  "description": "A typed group, an untyped group, or a token in the DTCG specification.",
+  "type": "object",
+  "if": {
+    "anyOf": [
+      {
+        "properties": { "$value": true },
+        "required": ["$value"]
+      },
+      {
+        "properties": { "$ref": true },
+        "required": ["$ref"]
+      }
+    ]
+  },
+  "then": {
+    "$ref": "https://www.designtokens.org/schemas/2025.10/format/token.json"
+  },
+  "else": {
+    "if": {
+      "properties": { "$type": true },
+      "required": ["$type"]
     },
-    {
-      "$ref": "https://www.designtokens.org/schemas/2025.10/format/token.json"
+    "then": {
+      "$ref": "https://www.designtokens.org/schemas/2025.10/format/typedScopes.json#/definitions/explicitGroup"
+    },
+    "else": {
+      "$ref": "https://www.designtokens.org/schemas/2025.10/format/group.json"
     }
-  ]
+  }
 }

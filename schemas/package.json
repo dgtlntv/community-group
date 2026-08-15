@@ -10,7 +10,8 @@
     "directory": "schemas"
   },
   "scripts": {
-    "build": "tsx scripts/bundle.ts",
+    "generate": "tsx scripts/generate-typed-scopes.ts",
+    "build": "pnpm run generate && tsx scripts/bundle.ts",
     "test": "vitest run",
     "lint": "prettier . --check && pnpm run typecheck",
     "format": "prettier . --write",

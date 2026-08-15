@@ -182,7 +182,7 @@ A color test gets `"color"`, a border test gets `"border"`, etc. For negative me
 This includes:
 
 - Reference resolution (curly-brace aliases, chained references, circular references)
-- Type inheritance from parent groups
+- Type inheritance that depends on resolved aliases or extended groups
 - `$extends` processing
 - Circular-reference detection in resolver sets/modifiers
 - Duplicate-name checking in resolver resolution orders
