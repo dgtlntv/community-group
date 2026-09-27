@@ -17,5 +17,10 @@
       "signals": ["sets", "modifiers", "resolutionOrder"]
     }
   },
-  "exclude": []
+  "exclude": [
+    {
+      "id": "format/groups.md:486b3cc3",
+      "reason": "Illustrates the equivalent JSON Schema `$ref` form of `$extends` (\"Using $ref (JSON Schema syntax)\"), which is intentionally not DTCG syntax."
+    }
+  ]
 }
