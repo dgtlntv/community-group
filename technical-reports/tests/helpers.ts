@@ -10,7 +10,7 @@ import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { globSync } from 'glob';
+import { globSync } from 'tinyglobby';
 import {
   parse as parseJsonc,
   type ParseError,
